@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        OCMIS Irrigation
+    </title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../node_modules/lity/dist/lity.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="../assets/fonts/stylesheet.css" rel="stylesheet">
+    <!-- Main custom css -->
+    <link href="../assets/css/dist/style.css" media="screen" rel="stylesheet" />
+</head>
+
+<body class="home">
+
+    <!-- Header Start -->
+    <header class="header header-transperent">
+        <div class="announcement">
+            <div class="container-fluid">
+                <div class="relative flex flex-wrap items-center lg:justify-between justify-center py-16 md:py-12 w-full">
+                    <div class="w-full lg:w-5/12 xl:w-6/12">
+                        <div class="announcement-bar swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide lgscreen:text-center">
+                                    <p>
+                                        The Largest Irrigation Reel Manufacturer in the World
+                                    </p>
+                                </div>
+                                <div class="swiper-slide lgscreen:text-center">
+                                    <p>
+                                        We Irrigate the World
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-7/12 xl:w-6/12">
+                        <ul class="hidden lg:flex flex-row lg:gap-10 m-0 p-0 items-center justify-end w-full relative">
+                            <li>
+                                <a href="javascript:void(0);" class="btn-search relative z-1 block">
+                                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1052 9.00364L9.8867 10.2221L8.49839 8.83378C6.60701 10.147 3.98717 9.96403 2.30159 8.27845C0.410217 6.38381 0.40695 3.30991 2.30159 1.41853C4.19624 -0.472844 7.27014 -0.472844 9.16151 1.41853C10.8471 3.10411 11.03 5.72395 9.71684 7.61533L11.1052 9.00364ZM3.24238 2.35932C1.8704 3.72804 1.8704 5.95261 3.24238 7.3246C4.61437 8.69658 6.83894 8.69658 8.20766 7.3246C9.57964 5.95588 9.57964 3.73131 8.20766 2.35932C6.83894 0.987338 4.61437 0.987338 3.24238 2.35932Z"/>
+                                        <path d="M12.111 8.89917L16.6058 13.3973C16.975 13.7632 16.975 14.374 16.6058 14.7464L15.6291 15.7232C15.26 16.0923 14.6524 16.0923 14.2833 15.7232L9.78512 11.225L12.111 8.89917Z"/>
+                                    </svg>                                                                            
+                                </a>
+                                <div class="search-bar">
+                                    <div class="flex items-center w-full">
+                                        <form class="w-full">
+                                            <input type="text" id="search" name="search" placeholder="Search"
+                                                class="p-0 pr-28 m-0 bg-transparent border-0 border-b-1 border-solid border-Gray-200 outline-0 w-full text-center text-12 leading-[20px] text-Gray-200 font-Outfit font-300 placeholder:opacity-100">
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="btn btn-link-ico">
+                                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.0105 8.77417C11.8415 8.89808 11.6421 8.95996 11.4428 8.95996C11.2434 8.95996 11.0441 8.89808 10.8751 8.77417L0.882876 1.44659L0.882812 15.04C0.882876 15.5702 1.31263 16 1.84281 16L21.0428 15.9999C21.573 15.9999 22.0028 15.5701 22.0028 15.04V1.44652L12.0105 8.77417Z" fill="#059BD8"/>
+                                        <path d="M11.4428 6.80957L20.7283 6.39646e-05L2.15712 0L11.4428 6.80957Z" fill="#059BD8"/>
+                                    </svg>                                        
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:866.764.9774" class="btn btn-link-ico">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.821 15.9999C12.1239 15.9999 11.1446 15.7477 9.67811 14.9284C7.89487 13.9284 6.51557 13.0052 4.74198 11.2362C3.03196 9.52728 2.19981 8.42084 1.03515 6.30153C-0.280581 3.90864 -0.0562925 2.65434 0.194425 2.11827C0.493 1.47754 0.933719 1.09432 1.50337 0.713963C1.82693 0.501973 2.16933 0.32025 2.52624 0.171099C2.56195 0.155742 2.59517 0.141099 2.62481 0.127884C2.8016 0.0482406 3.06946 -0.0721179 3.40875 0.056455C3.63518 0.141456 3.83733 0.315387 4.15376 0.627891C4.80269 1.2679 5.68949 2.69327 6.01664 3.39328C6.23628 3.86507 6.38164 4.1765 6.382 4.52579C6.382 4.93473 6.17628 5.25009 5.92664 5.59045C5.87985 5.65438 5.83342 5.71545 5.78842 5.77474C5.51663 6.13189 5.45699 6.2351 5.49627 6.41939C5.57592 6.78975 6.16985 7.89226 7.14594 8.8662C8.12202 9.84014 9.19275 10.3966 9.56454 10.4759C9.75668 10.5169 9.86204 10.4548 10.2306 10.1734C10.2835 10.133 10.3378 10.0912 10.3945 10.0494C10.7753 9.76622 11.076 9.56586 11.4753 9.56586H11.4774C11.8249 9.56586 12.1224 9.71657 12.6153 9.96515C13.2582 10.2894 14.7264 11.1648 15.3703 11.8145C15.6835 12.1302 15.8582 12.3316 15.9435 12.5577C16.0721 12.898 15.951 13.1648 15.8721 13.3434C15.8589 13.373 15.8443 13.4055 15.8289 13.4416C15.6786 13.7979 15.4958 14.1396 15.2828 14.4623C14.9032 15.0302 14.5185 15.4699 13.8764 15.7688C13.5466 15.9248 13.1858 16.0038 12.821 15.9999Z" fill="#059BD8"/>
+                                    </svg>                                                                            
+                                    <span>
+                                        866.794.9774
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid !px-0">
+            <div class="header-bottom flex flex-wrap justify-between xl:items-stretch xlscreen:items-center w-full relative xl:px-80 lg:px-40 px-30 py-16 lg:pb-16">
+                <a href="tel:866.764.9774" class="btn btn-link-ico lg:hidden">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28.8407 35.9997C27.2721 35.9997 25.0687 35.4324 21.7692 33.5889C17.7569 31.3389 14.6534 29.2617 10.6629 25.2815C6.81532 21.4364 4.94297 18.9469 2.32249 14.1784C-0.637899 8.79445 -0.13325 5.97227 0.430864 4.7661C1.10266 3.32447 2.09428 2.46223 3.37599 1.60642C4.10399 1.12944 4.8744 0.720563 5.67745 0.384973C5.7578 0.350419 5.83254 0.317473 5.89923 0.28774C6.29701 0.108541 6.89969 -0.162265 7.66309 0.127024C8.17257 0.318276 8.62739 0.70962 9.33937 1.41275C10.7995 2.85277 12.7948 6.05986 13.5308 7.63488C14.025 8.69641 14.3521 9.39713 14.3529 10.183C14.3529 11.1031 13.89 11.8127 13.3283 12.5785C13.2231 12.7224 13.1186 12.8598 13.0174 12.9932C12.4058 13.7967 12.2716 14.029 12.36 14.4436C12.5392 15.2769 13.8756 17.7576 16.0718 19.949C18.268 22.1403 20.6771 23.3923 21.5136 23.5707C21.9459 23.6631 22.183 23.5233 23.0123 22.8901C23.1312 22.7993 23.2534 22.7052 23.3811 22.6112C24.2378 21.974 24.9144 21.5232 25.8128 21.5232H25.8176C26.5995 21.5232 27.2689 21.8623 28.3778 22.4216C29.8243 23.1512 33.1278 25.1208 34.5766 26.5825C35.2814 27.2929 35.6743 27.7461 35.8664 28.2548C36.1557 29.0206 35.8833 29.6209 35.7057 30.0227C35.6759 30.0893 35.643 30.1625 35.6084 30.2436C35.2702 31.0452 34.8589 31.814 34.3798 32.5403C33.5256 33.818 32.6601 34.8072 31.2153 35.4798C30.4733 35.8307 29.6614 36.0085 28.8407 35.9997Z" fill="#059BD8"/>
+                    </svg>                        
+                </a>
+                <div class="logo xl:flex xl:justify-center">
+                    <a href="index.html">
+                        <img src="../assets/images/logo.svg" width="114" height="44" alt="Ocmis">
+                    </a>
+                </div>
+                <button class="navbar-toggler bg-transparent border-0 hidden lgscreen:flex lgscreen:flex-col gap-y-[10px] lg:hidden p-0" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar">                    
+                    <div id="menu-main-menu" class="mobile-menu-main">
+                        <ul class="flex lgscreen:flex-col flex-wrap items-center my-0 lg:gap-6 xl:gap-8 lgscreen:gap-y-6 xl:h-full lgscreen:bg-DarkBlue lgscreen:py-32 lgscreen:px-30">
+                            <li>
+                                <a href="#">
+                                    our products
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">
+                                            Irrigation Reels
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Irrigation Booms
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            PTO Pumps
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Micro Rain
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            SCOVA Engine Pumps
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Product support
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    about us
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">
+                                            Our Partners
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Sales Representatives
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Become A  Dealer
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    news
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="block relative lg:hidden bg-White px-30 py-16">
+                            <span class="absolute top-18 right-[36px] z-1 block">
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1052 9.00364L9.8867 10.2221L8.49839 8.83378C6.60701 10.147 3.98717 9.96403 2.30159 8.27845C0.410217 6.38381 0.40695 3.30991 2.30159 1.41853C4.19624 -0.472844 7.27014 -0.472844 9.16151 1.41853C10.8471 3.10411 11.03 5.72395 9.71684 7.61533L11.1052 9.00364ZM3.24238 2.35932C1.8704 3.72804 1.8704 5.95261 3.24238 7.3246C4.61437 8.69658 6.83894 8.69658 8.20766 7.3246C9.57964 5.95588 9.57964 3.73131 8.20766 2.35932C6.83894 0.987338 4.61437 0.987338 3.24238 2.35932Z" fill="#059BD8"/>
+                                    <path d="M12.111 8.89917L16.6058 13.3973C16.975 13.7632 16.975 14.374 16.6058 14.7464L15.6291 15.7232C15.26 16.0923 14.6524 16.0923 14.2833 15.7232L9.78512 11.225L12.111 8.89917Z" fill="#059BD8"/>
+                                </svg>                                                                            
+                            </span>
+                            <div class="search-bar">
+                                <div class="flex items-center w-full">
+                                    <form class="w-full">
+                                        <input type="text" id="search" name="search" placeholder="Search"
+                                            class="p-0 pr-28 m-0 bg-transparent border-0 border-b-1 border-solid border-Gray-200 outline-0 w-full text-center text-12 leading-[20px] text-Gray-200 font-Outfit font-300 text-opacity-100 placeholder:opacity-100">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-custom lgscreen:hidden">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);" class="btn btn-h-green">
+                                Dealer Resources
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="btn btn-h-green">
+                                Request A Quote                                   
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <!-- Header End -->
+
+    <!-- Banner Start -->
+    <section class="banner-wrapper bg-White relative overflow-hidden h-[665px] lg:h-[650px]">
+        <div class="img absolute top-0 left-0 w-full h-full">
+            <img src="../assets/images/herobanner.jpg" width="1512" height="650" class="img-fluid" alt="banner"/>
+        </div>
+        <div class="banner-details relative h-full">
+            <div class="container-fluid h-full">
+                <div class="flex flex-col items-center justify-end w-full m-0 p-0 h-full text-center pb-[19dvh]">
+                    <div class="img mb-20 last:mb-0">
+                        <img src="../assets/images/logo.svg" width="124" height="38" class="max-w-full h-auto block" alt="OCMIS"/>
+                    </div>
+                    <div class="title title-White font-Outfit mb-24 last:mb-0">
+                        <h1 class="h3">We Irrigate the World</h1>
+                    </div>
+                    <div class="btn-custom">
+                        <a href="javascript:void(0);" class="btn btn-green">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner End -->
+
+    <!-- zigzag Start -->
+    <section class="zigzag-img-content py-40 lg:py-80">
+        <div class="container-fluid xl3:container">
+            <div class="zigzag-gap flex flex-wrap items-center justify-center w-full m-0 p-0 relative lgscreen:gap-10">
+                <div class="w-full lg:order-2 order-1 lg:w-6/12 xl:max-w-[626px]">
+                    <div class="img landscape">
+                        <img src="../assets/images/irrigationreels.jpg" width="626" height="550" class="max-w-full h-auto block mx-auto" alt="Warranty">
+                    </div>
+                </div>
+                <div class="w-full lg:flex-1 lg:order-1 order-2">
+                    <div class="zigzag-content">
+                        <div class="title title-Darkblue title-Redwing uppercase mb-16 last:mb-0 text-left">
+                            <h2>
+                                Irrigation Reels
+                            </h2>
+                        </div>
+                        <div class="content mb-24 last:mb-0 text-left">
+                            <p>
+                                OCMIS has over 50 years of proven experience in the industry, manufactures the complete machine, is financially sound, and has been present in this market for over 24 years. OCMIS was the first to develop and patent the Vario Rain turbine/gearbox which is the most efficient turbine and gearbox on the market. Our patented turbine requires less water and pressure to run the gearbox, allowing more water and pressure to flow through to the gun! Look at the throw!
+                            </p>
+                        </div>
+                        <div class="btn-custom text-left">
+                            <a href="javascript:void(0);" class="btn btn-green">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- zigzag End -->
+
+    <!-- zigzag Start -->
+    <section class="zigzag-img-content py-40 lg:py-80">
+        <div class="container-fluid xl3:container">
+            <div class="zigzag-gap flex flex-wrap items-center justify-center w-full m-0 p-0 relative lgscreen:gap-10">
+                <div class="w-full lg:order-1 order-1 lg:w-6/12 xl:max-w-[626px]">
+                    <div class="img landscape">
+                        <img src="../assets/images/irrigationbooms.jpg" width="626" height="550" class="max-w-full h-auto block mx-auto" alt="Warranty">
+                    </div>
+                </div>
+                <div class="w-full lg:flex-1 lg:order-2 order-2">
+                    <div class="zigzag-content">
+                        <div class="title title-Darkblue title-Redwing uppercase mb-16 last:mb-0 text-left">
+                            <h2>
+                                Irrigation Booms
+                            </h2>
+                        </div>
+                        <div class="content mb-24 last:mb-0 text-left">
+                            <p>
+                                OCMIS has a parts and technical service depot centrally located outside of Oklahoma City, OK (KID) which inventories parts to support your machines. We ship next-day air to anywhere in the USA. OCMIS offers a galvanized chassis and gun cart as standard on their complete line of travelers. No one makes a broader range of sizes than OCMIS ranging from 1” to 5” i.d. and from 300’ to 2500’ in length. OCMIS has a large network of dealers who buy direct from the factory in Italy and therefore have a competitive price advantage often exceeding 20%. OCMIS is ISO 9001 certified - an international standard for quality and productivity.
+                            </p>
+                        </div>
+                        <div class="btn-custom text-left">
+                            <a href="javascript:void(0);" class="btn btn-green">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- zigzag End -->
+
+    <!-- zigzag Start -->
+    <section class="zigzag-img-content py-40 lg:py-80">
+        <div class="container-fluid xl3:container">
+            <div class="zigzag-gap flex flex-wrap items-center justify-center w-full m-0 p-0 relative lgscreen:gap-10">
+                <div class="w-full lg:order-2 order-1 lg:w-6/12 xl:max-w-[626px]">
+                    <div class="img landscape">
+                        <img src="../assets/images/scovapumps.jpg" width="626" height="550" class="max-w-full h-auto block mx-auto" alt="scova pumps"/>
+                    </div>
+                </div>
+                <div class="w-full lg:flex-1 lg:order-1 order-2">
+                    <div class="zigzag-content">
+                        <div class="title title-Darkblue title-Redwing uppercase mb-16 last:mb-0 text-left">
+                            <h2>
+                                Scova pumps
+                            </h2>
+                        </div>
+                        <div class="content mb-24 last:mb-0 text-left">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur. Tortor eget lobortis vel nunc ut turpis ut. Aliquam integer integer massa maecenas feugiat sem. Malesuada enim id sit feugiat. Tincidunt scelerisque nulla at scelerisque et at felis sagittis consectetur. Donec dolor elementum quam vel morbi cras amet vel. Quam pharetra pharetra bibendum ut neque risus facilisi. Lectus arcu aenean nulla mauris tristique. Sit sollicitudin eget egestas velit viverra tristique eu vivamus. Convallis ac libero fames massa ut ullamcorper ultrices.
+                            </p>
+                        </div>
+                        <div class="btn-custom text-left">
+                            <a href="javascript:void(0);" class="btn btn-green">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- zigzag End -->
+
+    <!-- zigzag Start -->
+    <section class="zigzag-img-content py-40 lg:py-80">
+        <div class="container-fluid xl3:container">
+            <div class="zigzag-gap flex flex-wrap items-center justify-center w-full m-0 p-0 relative lgscreen:gap-10">
+                <div class="w-full lg:order-1 order-1 lg:w-6/12 xl:max-w-[626px]">
+                    <div class="img landscape">
+                        <img src="../assets/images/microrain.jpg" width="626" height="550" class="max-w-full h-auto block mx-auto" alt="micro rain">
+                    </div>
+                </div>
+                <div class="w-full lg:flex-1 lg:order-2 order-2">
+                    <div class="zigzag-content">
+                        <div class="title title-Darkblue title-Redwing uppercase mb-16 last:mb-0 text-left">
+                            <h2>
+                                Micro rain
+                            </h2>
+                        </div>
+                        <div class="content mb-24 last:mb-0 text-left">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur. Tortor eget lobortis vel nunc ut turpis ut. Aliquam integer integer massa maecenas feugiat sem. Malesuada enim id sit feugiat. Tincidunt scelerisque nulla at scelerisque et at felis sagittis consectetur. Donec dolor elementum quam vel morbi cras amet vel. Quam pharetra pharetra bibendum ut neque risus facilisi. Lectus arcu aenean nulla mauris tristique. Sit sollicitudin eget egestas velit viverra tristique eu vivamus. Convallis ac libero fames massa ut ullamcorper ultrices.
+                            </p>
+                        </div>
+                        <div class="btn-custom text-left">
+                            <a href="javascript:void(0);" class="btn btn-green">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- zigzag End -->
+
+    <!-- irrigation-box slider Start -->
+    <section class="irrigation-box-wrapper py-40 lg:py-80 bg-Blue-300">
+        <div class="container-fluid">
+            <div class="flex flex-wrap w-full items-center justify-center m-0 mb-40 p-0 relative lg:text-center">
+                <div class="title title-White title-sub uppercase title-Redwing mb-24 last:mb-0 !flex flex-col gap-2">
+                    <h2>
+                        OCMIS Irrigation
+                    </h2>
+                    <h4>
+                        The Largest Irrigation Reel Manufacturer in the World
+                    </h4>
+                </div>
+                <div class="content white max-w-[658px]">
+                    <p>
+                        OCMIS is the largest manufacturer in the world of hard hose travelers and rose to number one due to their superior quality, performance and features.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mdscreen:!px-0">
+            <div class="irrigation-slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide flex flex-col items-center justify-center gap-6">
+                    <div class="img landscape">
+                        <img src="../assets/images/slide1.jpg" width="397" height="283" class="img-fluid" alt="Irrigation Travelers & Reels">
+                    </div>
+                    <div class="details text-center px-16">
+                        <div class="title title-White title-Redwing uppercase mb-8 last:mb-0">
+                            <h4>Irrigation Travelers & Reels</h4>
+                        </div>
+                        <div class="content white mb-24 last:mb-0">
+                            <p>
+                                We have many models of Irrigation Reels to choose from– Our standard “R-Series” and our “VR series of Vario Rain” models with the most efficient turbine on the market.
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide flex flex-col items-center justify-center gap-6">
+                    <div class="img landscape">
+                        <img src="../assets/images/slide2.jpg" width="397" height="283" class="img-fluid" alt="Spray Booms">
+                    </div>
+                    <div class="details text-center px-16">
+                        <div class="title title-White title-Redwing uppercase mb-8 last:mb-0">
+                            <h4>Spray Booms</h4>
+                        </div>
+                        <div class="content white mb-24 last:mb-0">
+                            <p>
+                                OCMIS spray booms' advantage are due to their speed and ease of use. They are made of galvanized steel to increase quality and lifecycle.
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide flex flex-col items-center justify-center gap-6">
+                    <div class="img landscape">
+                        <img src="../assets/images/slide3.jpg" width="397" height="283" class="img-fluid" alt="Scova Engine Pumps">
+                    </div>
+                    <div class="details text-center px-16">
+                        <div class="title title-White title-Redwing uppercase mb-8 last:mb-0">
+                            <h4>Scova Engine Pumps</h4>
+                        </div>
+                        <div class="content white mb-24 last:mb-0">
+                            <p>
+                                Available this fall due to required “Tier 4” engine manufacturing delays worldwide.
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="irrigation-pagination swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- irrigation-box slider End -->
+
+    <!-- Advantages slider Start -->
+    <section class="advantages-wrapper py-40 lg:py-80 bg-Aquamarine">
+        <div class="container-fluid">
+            <div class="flex flex-wrap w-full items-center justify-center m-0 mb-40 p-0 relative text-center">
+                <div class="title title-White uppercase title-Redwing mb-40 last:mb-0">
+                    <h2>
+                        Top 5 Advantages to the Vario Rain
+                    </h2>
+                </div>
+                <div class="img mb-40 last:mb-0">
+                    <img src="../assets/images/turbine.png" width="808" height="489" class="max-w-full h-auto block mx-auto" alt="turbine">
+                </div>
+                <div class="content white">
+                    <p>
+                        Irrigation machines of the new (patented) series VARIO RAIN derive from Ocmis continuous investment in R&D. An innovative interpretation of the traditional hosereel irrigation machines. Technology improvements have been made in design and construction and allowed us to reach our target: a new range of machines, innovative and unique in their genre, with lower pressure drops, easy to use, versatile, robust and needing minimum maintenance.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid lgscreen:!px-0">
+            <div class="advantages-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Advantages slider End -->
+
+    <!-- footer Start -->
+    <footer class="bg-Green_23 lg:py-80 py-55">
+        <div class="container-fluid">
+            <div class="footer-top pb-55 relative border-0 border-b-1 border-solid border-White">
+                <div class="flex flex-wrap items-center justify-center m-0 p-0 w-full relative">
+                    <div class="insta-title mb-28 text-center">
+                        <div class="title title-White uppercase mb-10">
+                            <h2>
+                                Follow Us on Instagram
+                            </h2>
+                        </div>
+                        <div class="content link">
+                            <a href="javascript:void(0);">
+                                @a.to.z.eye.care
+                            </a>
+                        </div>
+                    </div>
+                    <div class="insta-feed w-full">
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom relative pt-55">            
+                <div class="lg:flex-2 w-full relative z-1">
+                    <div class="footer-info">
+                        <ul class="footer-menu m-0 lg:columns-2 lgscreen:flex lgscreen:flex-col lgscreen:items-center lgscreen:justify-center lg:gap-x-[66px] gap-5">
+                            <li>
+                                <a href="javascript:void(0);">
+                                    Terms & Conditions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    Careers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:flex-1 w-full copyrights relative z-1">
+                    <ul class="social-media m-0 mb-40 flex flex-wrap items-center justify-center lg:justify-end gap-5 lg:gap-10">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_5_1949)">
+                                        <rect y="0.399902" width="40" height="40" rx="20" fill="white"/>
+                                        <path d="M23.8281 20.3999C23.8281 22.5142 22.1143 24.228 20 24.228C17.8857 24.228 16.1719 22.5142 16.1719 20.3999C16.1719 18.2856 17.8857 16.5718 20 16.5718C22.1143 16.5718 23.8281 18.2856 23.8281 20.3999Z" fill="#009B6F"/>
+                                        <path d="M28.9529 13.6268C28.7689 13.1281 28.4753 12.6768 28.0938 12.3063C27.7233 11.9248 27.2723 11.6312 26.7733 11.4472C26.3687 11.29 25.7607 11.103 24.6411 11.052C23.4298 10.9968 23.0667 10.9849 20.0002 10.9849C16.9335 10.9849 16.5704 10.9965 15.3594 11.0517C14.2397 11.103 13.6315 11.29 13.2272 11.4472C12.7282 11.6312 12.2769 11.9248 11.9067 12.3063C11.5252 12.6768 11.2316 13.1278 11.0473 13.6268C10.8901 14.0314 10.7031 14.6396 10.6521 15.7593C10.5969 16.9703 10.585 17.3334 10.585 20.4001C10.585 23.4666 10.5969 23.8297 10.6521 25.041C10.7031 26.1606 10.8901 26.7686 11.0473 27.1732C11.2316 27.6722 11.5249 28.1232 11.9064 28.4937C12.2769 28.8752 12.7279 29.1688 13.2269 29.3528C13.6315 29.5103 14.2397 29.6973 15.3594 29.7483C16.5704 29.8035 16.9332 29.8151 19.9999 29.8151C23.067 29.8151 23.4301 29.8035 24.6407 29.7483C25.7604 29.6973 26.3687 29.5103 26.7733 29.3528C27.7749 28.9664 28.5665 28.1748 28.9529 27.1732C29.11 26.7686 29.2971 26.1606 29.3484 25.041C29.4036 23.8297 29.4152 23.4666 29.4152 20.4001C29.4152 17.3334 29.4036 16.9703 29.3484 15.7593C29.2974 14.6396 29.1104 14.0314 28.9529 13.6268ZM20.0002 26.2971C16.7431 26.2971 14.1027 23.657 14.1027 20.3998C14.1027 17.1427 16.7431 14.5026 20.0002 14.5026C23.2571 14.5026 25.8975 17.1427 25.8975 20.3998C25.8975 23.657 23.2571 26.2971 20.0002 26.2971ZM26.1306 15.6476C25.3695 15.6476 24.7524 15.0306 24.7524 14.2695C24.7524 13.5084 25.3695 12.8913 26.1306 12.8913C26.8917 12.8913 27.5088 13.5084 27.5088 14.2695C27.5085 15.0306 26.8917 15.6476 26.1306 15.6476Z" fill="#009B6F"/>
+                                        <path d="M20 0.399902C8.95599 0.399902 0 9.3559 0 20.3999C0 31.4439 8.95599 40.3999 20 40.3999C31.044 40.3999 40 31.4439 40 20.3999C40 9.3559 31.044 0.399902 20 0.399902ZM31.4151 25.1347C31.3596 26.3572 31.1652 27.1919 30.8813 27.9225C30.2847 29.4651 29.0652 30.6846 27.5226 31.2812C26.7923 31.5651 25.9573 31.7592 24.7351 31.815C23.5104 31.8708 23.1192 31.8843 20.0003 31.8843C16.8811 31.8843 16.4902 31.8708 15.2652 31.815C14.043 31.7592 13.208 31.5651 12.4777 31.2812C11.7111 30.9929 11.0172 30.5409 10.4434 29.9565C9.85931 29.3831 9.40735 28.6888 9.11896 27.9225C8.83514 27.1922 8.64075 26.3572 8.58521 25.135C8.52875 23.91 8.51562 23.5188 8.51562 20.3999C8.51562 17.281 8.52875 16.8898 8.5849 15.6651C8.64044 14.4426 8.83453 13.6079 9.11835 12.8773C9.40674 12.111 9.85901 11.4167 10.4434 10.8433C11.0168 10.2589 11.7111 9.80695 12.4774 9.51855C13.208 9.23474 14.0427 9.04065 15.2652 8.9848C16.4899 8.92896 16.8811 8.91553 20 8.91553C23.1189 8.91553 23.5101 8.92896 24.7348 8.98511C25.9573 9.04065 26.792 9.23474 27.5226 9.51825C28.2889 9.80664 28.9832 10.2589 29.5569 10.8433C30.141 11.4171 30.5933 12.111 30.8813 12.8773C31.1655 13.6079 31.3596 14.4426 31.4154 15.6651C31.4713 16.8898 31.4844 17.281 31.4844 20.3999C31.4844 23.5188 31.4713 23.91 31.4151 25.1347Z" fill="#009B6F"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_5_1949">
+                                            <rect y="0.399902" width="40" height="40" rx="20" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_5_1953)">
+                                        <rect y="0.399902" width="40" height="40" rx="20" fill="white"/>
+                                        <path d="M20 0.399902C8.95427 0.399902 0 9.35417 0 20.3999C0 31.4456 8.95427 40.3999 20 40.3999C31.0457 40.3999 40 31.4456 40 20.3999C40 9.35417 31.0457 0.399902 20 0.399902ZM27.6301 10.5851L24.8638 10.5863C22.6946 10.5863 22.2752 11.6171 22.2752 13.1295V16.4646H27.448L27.4455 21.6881H22.2756V35.0929H16.8802V21.6881H12.3699V16.4646H16.8802V12.6123C16.8802 8.14169 19.6117 5.70691 23.5994 5.70691L27.6305 5.71305V10.5851H27.6301Z" fill="#009B6F"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_5_1953">
+                                            <rect y="0.399902" width="40" height="40" rx="20" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_5_1956)">
+                                        <rect y="0.399902" width="40" height="40" rx="20" fill="white"/>
+                                        <path d="M20 0.399902C8.95536 0.399902 0 9.35526 0 20.3999C0 31.4445 8.95536 40.3999 20 40.3999C31.0446 40.3999 40 31.4445 40 20.3999C40 9.35526 31.0446 0.399902 20 0.399902ZM28.1111 29.416C26.1403 31.235 23.4376 32.2888 20.2308 32.2888C15.7364 32.2888 11.6277 29.7561 9.60826 25.7415C7.92287 22.3829 7.92287 18.426 9.60826 15.0674C11.6277 11.0498 15.7364 8.51712 20.2308 8.51712C23.1825 8.48372 26.034 9.59213 28.184 11.6085L24.7889 15.0036C23.5621 13.8345 21.9223 13.1967 20.2278 13.221C17.1272 13.221 14.4913 15.3134 13.553 18.1315C13.055 19.6073 13.055 21.2077 13.553 22.6835H13.556C14.5005 25.4956 17.1303 27.5879 20.2308 27.5879C21.8312 27.5879 23.2068 27.1779 24.2697 26.4552C25.5238 25.6231 26.3802 24.3173 26.6444 22.8414H20.2247V18.2651H31.4364C31.5761 19.0607 31.6429 19.8715 31.6429 20.6793C31.6429 24.296 30.3492 27.351 28.102 29.4221L28.1111 29.416Z" fill="#009B6F"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_5_1956">
+                                            <rect y="0.399902" width="40" height="40" rx="20" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>                                    
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="flex lgscreen:flex-col lg:flex-wrap w-full justify-center lg:justify-end items-center gap-5 lg:gap-10">
+                        <div class="copttxt content white">
+                            <p>
+                                © 2023 A To Z Eyecare
+                            </p>
+                        </div>
+                        <a href="https://techyscouts.com/" class="techyscouts-credit-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 0 3700 552" id="techyscouts-logo" aria-labelledby="techyscouts-logo-title" role="img">
+                                <path id="techyscouts-logo-heart" fill="#009B6F" style="transform-origin:10% 50%;" d="M436 257L255 427 73 257a81 81 0 0 1-25-62c0-23 4-42 22-59 17-15 38-23 62-23 23 0 45 14 61 29l62 54 62-54c16-15 38-29 61-29 24 0 45 8 61 23 19 17 23 36 23 59 0 24-7 46-26 62m32-154c-50-46-130-46-179 0l-34 30-34-30c-49-46-130-46-179 0-56 51-56 134 0 185l213 196 213-196c56-51 56-134 0-185"/>
+                                <path id="techyscouts-logo-line-1" fill="#ffffff" d="M803 372L1016 0l34 20-213 372-34-20z"/>
+                                <path id="techyscouts-logo-line-2" fill="#ffffff" d="M879 552l-33-20 213-372 33 20-213 372z"/>
+                                <path id="techyscouts-logo-text" d="M3491.171 318.855c11.336 52.417-38.612 83.584-85.725 83.584-36.132 0-80.058-20.542-84.308-60.563l-.355-2.48 5.668-.708.354 2.48c3.897 37.188 45.343 55.959 78.995 55.959 43.217 0 89.976-27.98 79.704-77.21-15.941-73.667-155.865-6.375-162.241-98.814-1.417-14.875 2.48-29.396 11.69-41.438 36.132-46.75 138.152-40.73 150.196 23.376l.355 2.833-5.314 1.062-.354-2.833c-2.126-10.27-6.376-19.125-13.461-26.917-15.232-16.292-39.675-23.021-61.992-22.667-23.38.354-49.947 8.854-64.825 28.334-8.856 10.98-12.044 24.083-10.981 37.896 6.376 86.772 145.591 18.771 162.594 98.106zm-254.34 82.168h-5.314V157.707h-85.725v-5.667h176.764v5.667h-85.725v243.316zm-198.366 1.77c-41.092 0-86.788-24.083-86.788-70.125V152.394h5.667v180.628c0 42.855 43.217 64.105 81.12 64.105 37.904 0 81.121-21.25 81.121-64.46V152.395h5.668v180.628c0 45.688-46.05 69.772-86.788 69.772zm-239.105.709c-34.715 0-66.596-14.167-89.267-37.542-22.672-23.021-37.195-54.897-37.195-89.96 0-35.063 14.523-66.938 37.195-89.96 22.67-23.375 54.552-37.542 89.267-37.542 35.07 0 66.597 14.167 89.622 37.542 22.671 23.022 37.195 54.897 37.195 89.96 0 35.063-14.524 66.939-37.195 89.96-23.025 23.375-54.552 37.542-89.622 37.542zm85.726-213.212c-21.963-22.312-52.427-36.125-85.726-36.125-33.298 0-63.408 13.813-85.37 36.125-21.61 21.959-35.425 52.064-35.425 85.71 0 33.646 13.816 63.75 35.424 85.71 21.963 22.312 52.073 36.125 85.371 36.125 33.299 0 63.763-13.813 85.726-36.125 21.608-21.96 35.07-52.064 35.07-85.71 0-33.646-13.462-63.751-35.07-85.71zM2544.67 394.648c31.882 0 60.93-13.459 81.83-35.063 9.564-9.917 17.711-21.25 23.379-34.355h6.022c-6.022 14.52-14.878 27.625-25.505 38.605-21.963 22.667-52.073 36.48-85.726 36.48-33.652 0-63.762-13.813-85.725-36.48-21.608-22.313-35.424-53.126-35.424-87.48 0-34.001 13.816-64.814 35.424-87.127 21.963-22.667 52.073-36.48 85.725-36.48 33.653 0 63.763 13.813 85.726 36.48 10.627 10.98 19.483 24.084 25.505 38.605h-6.022c-5.668-13.105-13.815-24.792-23.38-34.71-20.9-21.604-49.947-34.708-81.829-34.708-31.88 0-60.928 13.104-81.828 34.709-20.9 21.604-34.007 51-34.007 83.23 0 32.584 13.107 61.98 34.007 83.23 20.9 21.605 49.947 35.064 81.828 35.064zm-228.124 7.791c-36.132 0-80.058-20.542-84.309-60.563l-.354-2.48 5.668-.708.354 2.48c3.897 37.188 45.343 55.959 78.995 55.959 43.217 0 89.977-27.98 79.704-77.21-15.941-73.667-155.865-6.375-162.24-98.814-1.418-14.875 2.479-29.396 11.689-41.438 36.132-46.75 138.152-40.73 150.196 23.376l.355 2.833-5.314 1.062-.354-2.833c-2.126-10.27-6.376-19.125-13.461-26.917-15.232-16.292-39.675-23.021-61.992-22.667-23.38.354-49.947 8.854-64.825 28.334-8.856 10.98-12.044 24.083-10.981 37.896 6.376 86.772 145.591 18.771 162.594 98.106 11.336 52.417-38.611 83.584-85.725 83.584zm-182.426-2.479h-5.668V297.605l-91.039-145.211h6.73l87.143 139.544 87.143-139.544h6.73l-91.039 145.21V399.96zm-120.08-122.897h-155.51V399.96h-5.313V152.394h5.314V271.75h155.51V152.394h5.668V399.96h-5.668V277.063zm-298.26 117.585c31.881 0 60.929-13.459 81.829-35.063 9.564-9.917 17.711-21.25 23.38-34.355h6.021c-6.022 14.52-14.878 27.625-25.505 38.605-21.962 22.667-52.073 36.48-85.725 36.48-33.653 0-63.763-13.813-85.726-36.48-21.608-22.313-35.423-53.126-35.423-87.48 0-34.001 13.815-64.814 35.423-87.127 21.963-22.667 52.073-36.48 85.726-36.48 33.652 0 63.763 13.813 85.725 36.48 10.627 10.98 19.483 24.084 25.505 38.605h-6.022c-5.668-13.105-13.815-24.792-23.38-34.71-20.9-21.604-49.947-34.708-81.828-34.708-31.882 0-60.929 13.104-81.829 34.709-20.9 21.604-34.007 51-34.007 83.23 0 32.584 13.107 61.98 34.007 83.23 20.9 21.605 49.947 35.064 81.829 35.064zm-277.365 5.312V152.394h136.736v5.313h-131.068v115.46h128.234v5.666h-128.234v115.815h131.776v5.312h-137.444zm-106.975 1.063h-5.314V157.707h-85.725v-5.667h176.764v5.667h-85.725v243.316z" style="fill:none;stroke:#ffffff;stroke-width:16;"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer End -->
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="../node_modules/lity/dist/lity.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.js"></script>
+<script src="../assets/js/script.js"></script>
+</html>

@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Redwing';
+    src: url('Redwing-Medium.eot');
+    src: url('Redwing-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Redwing-Medium.woff2') format('woff2'),
+        url('Redwing-Medium.woff') format('woff'),
+        url('Redwing-Medium.ttf') format('truetype'),
+        url('Redwing-Medium.svg#Redwing-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Redwing';
+    src: url('Redwing-Light.eot');
+    src: url('Redwing-Light.eot?#iefix') format('embedded-opentype'),
+        url('Redwing-Light.woff2') format('woff2'),
+        url('Redwing-Light.woff') format('woff'),
+        url('Redwing-Light.ttf') format('truetype'),
+        url('Redwing-Light.svg#Redwing-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
