@@ -293,6 +293,7 @@ module.exports = {
             'none': 'none',
             'menu': '0px 4px 18px rgba(0, 0, 0, 0.2)',
             'header': '0px 4px 12px rgba(0, 0, 0, 0.07)',
+            'social': '0px 4px 2px rgba(0, 0, 0, 0.2)',
         },
         borderWidth: {
             1: '1px',

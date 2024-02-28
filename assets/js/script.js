@@ -36,11 +36,11 @@ $(document).ready(function ($) {
     //     }).resize();
     // }
 
-    // if ($('.breadcrumb-wrapper ').length) {
-    //     $(window).resize(function() {
-    //         $('.breadcrumb-wrapper ').css("padding-top", $(".header").height());
-    //     }).resize();
-    // }
+    if ($('.banner-wrapper').length) {
+        $(window).resize(function() {
+            $('.banner-details').css("padding-top", $(".header").height());
+        }).resize();
+    }
 
     // Video play btn
     if ($('.video_wrapper').length) {
@@ -65,7 +65,7 @@ $(document).ready(function ($) {
     }
 
 
-    // announcement_bar Slider
+    // Slider
     if ($('.announcement').length) {
         var announcement_bar = new Swiper(".announcement-bar", {
             slidesPerView: 1,
@@ -79,10 +79,8 @@ $(document).ready(function ($) {
         });
     }
 
-
-    // testimonial Slider
     if ($('.irrigation-box-wrapper').length) {
-        var swiper = new Swiper(".irrigation-slider ", {
+        var irrigationslide = new Swiper(".irrigation-slider ", {
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true
@@ -126,6 +124,81 @@ $(document).ready(function ($) {
                         modifier: 1,
                         slideShadows: false
                     },
+                },
+            },
+        });
+        window.addEventListener('resize', function () {
+            irrigationslide.update();
+        });
+    }
+
+    if ($('.advantages-wrapper').length) {
+        var advantagesslide = new Swiper(".advantages-slider", {
+            grabCursor: true,
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: false,
+                draggable: true,
+            },
+            breakpoints: {
+                1366: {
+                    slidesPerView: 5,
+                    spaceBetween: 40,
+                    scrollbar: false,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                    centeredSlides: true,
+                },
+                640: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 40,
+                    centeredSlides: true,
+                },
+                320: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 40,
+                    centeredSlides: true,
+                },
+            },
+        });
+        window.addEventListener('resize', function () {
+            advantagesslide.update();
+        });
+    }
+
+    if ($('.footer-gallery').length) {
+        var galleryslide = new Swiper(".gallery-slider", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 40,
+            centeredSlides: true,
+            speed: 2000,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 40,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5.5,
+                    spaceBetween: 40,
                 },
             },
         });

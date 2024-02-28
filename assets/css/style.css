@@ -367,10 +367,10 @@
   }
   .home header.is-sticky,
   header.is-sticky {
-    animation: smoothScroll 0.5s forwards;
-    backdrop-filter: blur(11px);
+    animation: smoothScroll 1s forwards;
+    backdrop-filter: saturate(180%) blur(11px);
     z-index: 1030;
-    @apply fixed top-0 bg-White drop-shadow-header;
+    @apply fixed top-0 bg-White/95 drop-shadow-header;
   }
   .navbar-toggler {
     @apply cursor-pointer;
@@ -460,6 +460,157 @@
     @apply opacity-100
   }
   /* Irrigation slider End */
+
+  /* advantages Start */
+  .advantages-slider .swiper-scrollbar {
+    @apply xxl:hidden relative inset-0 w-full h-[10px] bg-Blue-100/30 max-w-[40%] mx-auto mt-40
+  }
+  .advantages-slider .swiper-scrollbar-drag {
+    @apply bg-Blue-100/100
+  }
+  /* advantages End */
+
+  /* gallery Start */
+  .footer-gallery .gallery-slider .landscape {
+    @apply relative w-full overflow-hidden rounded-5 pt-[76.92%]
+  }
+  .footer-gallery .gallery-slider .landscape img {
+    @apply absolute top-0 left-0;
+  }
+  /* gallery End */
+
+  /* Footer Start */
+
+  /* techyscouts logo start */
+  #techyscouts-logo {
+    display: inline-block;
+    fill: currentColor;
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+  }
+
+  .techyscouts-credit-link:hover #techyscouts-logo-heart,
+  .techyscouts-credit-link:focus #techyscouts-logo-heart {
+    animation: ts-heart-beat 2s infinite ease-in-out 0.6s;
+  }
+
+  .techyscouts-credit-link:hover #techyscouts-logo-text,
+  .techyscouts-credit-link:focus #techyscouts-logo-text {
+    animation: ts-draw-logo 2s forwards;
+  }
+
+  .techyscouts-credit-link:hover #techyscouts-logo-line-1,
+  .techyscouts-credit-link:hover #techyscouts-logo-line-2,
+  .techyscouts-credit-link:focus #techyscouts-logo-line-1,
+  .techyscouts-credit-link:focus #techyscouts-logo-line-2 {
+    animation: ts-swoop-down 0.5s forwards ease-out;
+  }
+
+  .techyscouts-credit-link:hover #techyscouts-logo-line-2,
+  .techyscouts-credit-link:focus #techyscouts-logo-line-2 {
+    animation-name: ts-swoop-up;
+  }
+
+  @keyframes ts-heart-beat {
+    5% {
+      transform: scale(1.1);
+      fill: #15A02B;
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    15% {
+      transform: scale(1.2);
+      fill: #15A02B;
+    }
+    40% {
+      transform: scale(1);
+      stroke-width: 0;
+    }
+  }
+
+  @keyframes ts-draw-logo {
+    0% {
+      stroke-dasharray: 2600;
+      stroke-dashoffset: 2600;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes ts-swoop-down {
+    0% {
+      transform: translateY(-100%) rotate(10deg);
+    }
+  }
+
+  @keyframes ts-swoop-up {
+    0% {
+      transform: translateY(100%) rotate(-10deg);
+    }
+  }
+  /* techyscouts logo end */
+
+  footer .footerlogo {
+    @apply relative z-1
+  }
+  footer .footerlogo::before {
+    content: "";
+    @apply absolute top-50_per left-0 translate-y-minus_50 w-full h-[1px] bg-Green -z-1;
+  }
+  footer .footerlogo a {
+    @apply table pr-24 bg-White
+  }
+  .social-media li,
+  .social-media li img {
+    @apply block duration-300 delay-150 ease-linear;
+  }
+  .social-media li a:hover img {
+    @apply translate-y-[-5px] drop-shadow-social;
+  }
+  .copyrights .divider {
+    @apply bg-Gray-200 lg:w-[1px] lg:h-[19px] block w-full h-[1px] lg:mx-20 lg:my-0 my-20
+  }
+  .subscribe form .row {
+    @apply flex flex-wrap m-0 p-0 pt-[11px] w-full items-center justify-center relative gap-[15px];
+  }
+  .subscribe form .input-field{
+    @apply relative w-full md:flex-1;
+  }
+  .subscribe form label {
+    @apply absolute -top-[11px] left-[21px] text-Gray-200 text-opacity-50 bg-White text-16 font-Outfit font-400 leading-20 px-8
+  }
+  .subscribe form input {
+    @apply bg-White border-1 border-solid border-Blue-100 p-0 py-[11px] px-20 m-0 text-Gray-200 text-16 leading-20 font-Outfit font-400 outline-none rounded-[3px] w-full;
+  }
+  .subscribe form .submit-btn {
+    @apply lg:flex-1 w-full
+  }
+  .copttxt.content p {
+    @apply leading-[150%] font-600;
+  }
+  .footer-menu ul {
+    @apply flex smscreen2:flex-col sm:flex-wrap items-center justify-center lg:justify-start m-0 p-0 w-full gap-6 lg:gap-[64px];
+  }
+  .footer-menu ul li {
+    @apply list-none m-0 p-0;
+  }
+  .footer-menu ul li a {
+    @apply text-20 leading-[150%] text-DarkBlue font-Redwing font-500 m-0 p-0 duration-300 delay-150 ease-linear hover:text-Blue-100 uppercase;
+  }
+  .footer-info ul {
+    @apply flex flex-wrap items-center justify-center lg:justify-start m-0 p-0 w-full gap-6 lg:gap-[72px];
+  }
+  .footer-info ul li {
+    @apply flex flex-wrap items-center justify-start m-0 p-0 gap-2;
+  }
+  .footer-info ul li a {
+    @apply text-16 leading-20 text-Gray-200 font-Outfit font-400 m-0 p-0 duration-300 delay-150 ease-linear hover:text-Blue-100;
+  }
+  /* Footer End */
 
 }
 
