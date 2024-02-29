@@ -575,10 +575,10 @@
     @apply bg-Gray-200 lg:w-[1px] lg:h-[19px] block w-full h-[1px] lg:mx-20 lg:my-0 my-20
   }
   .subscribe form .row {
-    @apply flex flex-wrap m-0 p-0 pt-[11px] w-full items-center justify-center relative gap-[15px];
+    @apply grid grid-cols-1 lg:grid-cols-3 m-0 p-0 pt-[11px] w-full relative gap-[15px];
   }
   .subscribe form .input-field{
-    @apply relative w-full md:flex-1;
+    @apply relative w-full;
   }
   .subscribe form label {
     @apply absolute -top-[11px] left-[21px] text-Gray-200 text-opacity-50 bg-White text-16 font-Outfit font-400 leading-20 px-8
@@ -587,7 +587,7 @@
     @apply bg-White border-1 border-solid border-Blue-100 p-0 py-[11px] px-20 m-0 text-Gray-200 text-16 leading-20 font-Outfit font-400 outline-none rounded-[3px] w-full;
   }
   .subscribe form .submit-btn {
-    @apply lg:flex-1 w-full
+    @apply w-full
   }
   .copttxt.content p {
     @apply leading-[150%] font-600;
