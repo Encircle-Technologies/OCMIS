@@ -353,10 +353,10 @@
   }
 
   header.header {
-    @apply absolute bg-transparent top-0 left-0 w-full z-999;
+    @apply relative bg-transparent top-0 left-0 w-full z-999;
   }
   header.header-transperent {
-    @apply bg-White/75
+    @apply bg-White/75 absolute
   }
   .logo a,
   .logo a svg {
@@ -581,7 +581,7 @@
     @apply relative w-full;
   }
   .subscribe form label {
-    @apply absolute -top-[11px] left-[21px] text-Gray-200 text-opacity-50 bg-White text-16 font-Outfit font-400 leading-20 px-8
+    @apply absolute -top-[11px] left-[21px] text-Gray-200 text-opacity-50 bg-White text-16 lg:text-12 xl:text-16 font-Outfit font-400 leading-20 px-8
   }
   .subscribe form input {
     @apply bg-White border-1 border-solid border-Blue-100 p-0 py-[11px] px-20 m-0 text-Gray-200 text-16 leading-20 font-Outfit font-400 outline-none rounded-[3px] w-full;
@@ -611,6 +611,16 @@
     @apply text-16 leading-20 text-Gray-200 font-Outfit font-400 m-0 p-0 duration-300 delay-150 ease-linear hover:text-Blue-100;
   }
   /* Footer End */
+
+  /* breadcrumb Start */
+  .breadcrumb-wrapper {
+    @apply flex flex-col items-center justify-center m-0 p-0 w-full;
+  }
+  .breadcrumb-wrapper .img:before {
+    content: "";
+    @apply absolute top-0 left-0 w-full h-full bg-Black/40;
+  }
+  /* breadcrumb End */
 
 }
 
