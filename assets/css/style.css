@@ -231,6 +231,23 @@
     @apply text-DarkBlue;
   }
 
+  .title-Gray h1,
+  .title-Gray h2,
+  .title-Gray h3,
+  .title-Gray h4,
+  .title-Gray h5,
+  .title-Gray h6 {
+    @apply text-Gray-200;
+  }
+
+  .subtitle h2,
+  .subtitle h3,
+  .subtitle h4,
+  .subtitle h5,
+  .subtitle h6 {
+    @apply font-300;
+  }
+
   .title-Redwing {
     @apply font-Redwing
   }
@@ -285,13 +302,9 @@
     @apply lg:left-[55px] m-0 lgscreen:right-0 lgscreen:top-0 lgscreen:left-0 lgscreen:relative
   }
 
-  .bg-pattern {
-    @apply relative z-1;
+  .divider-green {
+    @apply w-full h-[1px] bg-Green my-16 block;
   }
-  .bg-pattern:before {
-    /* content: "";
-    @apply absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat bg-center bg-[url('../../../assets/images/dotpattern.jpg')] mix-blend-multiply opacity-[0.28] -z-1; */
-  } 
 }
 
 @layer utilities {
@@ -620,6 +633,10 @@
     content: "";
     @apply absolute top-0 left-0 w-full h-full bg-Black/40;
   }
+  .breadcrumb-wrapper .img:after {
+    content: "";
+    @apply absolute top-0 left-0 w-full h-full bg-radial_gradient opacity-40;
+  }
   /* breadcrumb End */
 
 }
@@ -637,7 +654,7 @@
     @apply block;
   }
   .header #menu-main-menu {
-    @apply w-full m-0 p-0 relative overflow-y-auto overflow-x-hidden h-[calc(100dvh_-_136px)];
+    @apply w-full m-0 p-0 relative overflow-y-auto overflow-x-hidden h-[calc(100dvh_-_152px)];
   }
   header.header .navbar ul li ul.sub-menu {
     @apply py-0 px-0 text-left relative left-0 translate-x-0 top-0 flex-col w-full gap-0 order-3 hidden z-1 rounded-[0px];
@@ -701,17 +718,8 @@
   .header-bottom .btn-custom ul {
     @apply flex-col;
   }
-  .header-bottom .btn-custom ul li {
-    @apply w-auto
-  }
-  .header-bottom .btn-custom ul li a:hover {
-    /* @apply text-Green_22; */
-  }
-  .header-bottom .btn-custom ul li a:hover svg {
-    /* @apply fill-Green_22; */
-  }
-  .header-bottom .btn-custom ul li a.btn-search:hover svg {
-    /* @apply fill-Green_2; */
+  .header-bottom .btn-custom ul li .btn-green {
+    @apply bg-Green text-White leading-[150%] font-500 px-[46px] py-10 relative capitalize duration-300 delay-150 ease-linear z-1 smscreen:min-w-[200px] justify-center;
   }
 }
 /* Responsive CSS End */

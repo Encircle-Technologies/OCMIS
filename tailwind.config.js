@@ -259,9 +259,7 @@ module.exports = {
         },
         backgroundImage: theme => ({
             none: 'none',
-            'header_gradient': ' linear-gradient(180deg, #ED7424 0%, rgba(237, 116, 36, 0.00) 100%)',
-            'green': 'linear-gradient(0deg, #002E21 0%, rgba(0, 46, 33, 0.75) 33.44%, rgba(0, 46, 33, 0.56) 59.13%, rgba(0, 46, 33, 0.00) 100%)',
-            'green-full': 'linear-gradient(0deg, #002E21 0%, rgba(0, 46, 33, 0.75) 33.44%, rgba(0, 46, 33, 0.75) 59.13%, rgba(0, 46, 33, 0.75) 100%)',
+            'radial_gradient': 'radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%)',
         }),
         borderRadius: {
             none: '0',

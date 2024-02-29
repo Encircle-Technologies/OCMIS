@@ -77,7 +77,7 @@
                                     <div class="flex items-center w-full">
                                         <form class="w-full">
                                             <input type="text" id="search" name="search" placeholder="Search"
-                                                class="p-0 pr-28 m-0 bg-transparent border-0 border-b-1 border-solid border-Gray-200 outline-0 w-full text-center text-12 leading-[20px] text-Gray-200 font-Outfit font-300 placeholder:opacity-100">
+                                                class="p-0 pr-28 m-0 bg-transparent border-0 border-b-1 border-solid border-Gray-200 outline-0 w-full text-center text-12 leading-[20px] text-Gray-200 font-Outfit font-300 placeholder:opacity-100 rounded-none">
                                         </form>
                                     </div>
                                 </div>
@@ -124,7 +124,7 @@
                 </button>
                 <div class="navbar">                    
                     <div id="menu-main-menu" class="mobile-menu-main">
-                        <ul class="flex lgscreen:flex-col flex-wrap items-center my-0 lg:gap-6 xl:gap-8 lgscreen:gap-y-6 xl:h-full lgscreen:bg-DarkBlue lgscreen:py-32 lgscreen:px-30">
+                        <ul class="flex lgscreen:flex-col flex-wrap items-center my-0 lg:gap-6 xl:gap-8 lgscreen:gap-y-6 xl:h-full lgscreen:bg-DarkBlue lgscreen:pt-32 lgscreen:px-30 lgscreen:pb-40">
                             <li>
                                 <a href="#">
                                     our products
@@ -193,6 +193,20 @@
                                 <a href="#">Contact Us</a>
                             </li>
                         </ul>
+                        <div class="btn-custom lg:hidden lgscreen:px-30 lgscreen:pb-32 lgscreen:bg-DarkBlue">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0);" class="btn btn-green">
+                                        Dealer Resources
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" class="btn btn-green">
+                                        Request A Quote                                   
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="block relative lg:hidden bg-White px-30 py-16">
                             <span class="absolute top-18 right-[36px] z-1 block">
                                 <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -204,7 +218,7 @@
                                 <div class="flex items-center w-full">
                                     <form class="w-full">
                                         <input type="text" id="search" name="search" placeholder="Search"
-                                            class="p-0 pr-28 m-0 bg-transparent border-0 border-b-1 border-solid border-Gray-200 outline-0 w-full text-center text-12 leading-[20px] text-Gray-200 font-Outfit font-300 text-opacity-100 placeholder:opacity-100">
+                                            class="p-0 pr-28 m-0 bg-transparent border-0 border-b-1 border-solid border-Gray-200 outline-0 w-full text-center text-12 leading-[20px] text-Gray-200 font-Outfit font-300 text-opacity-100 placeholder:opacity-100 rounded-none">
                                     </form>
                                 </div>
                             </div>
@@ -250,27 +264,63 @@
     <!-- Banner End -->
 
     <!-- zigzag Start -->
-    <section class="zigzag-img-content py-40 lg:py-80">
+    <section class="collection-wrapper py-40 lg:py-80">
         <div class="container-fluid xl3:container">
-            <div class="zigzag-gap flex flex-wrap items-center justify-center w-full m-0 p-0 relative lgscreen:gap-10">
-                <div class="w-full lg:order-2 order-1 lg:w-6/12 xl:max-w-[40%]">
-                    <div class="img landscape">
-                        <img src="../assets/images/irrigationreels.jpg" width="626" height="550" class="xlscreen:h-auto xlscreen:block xlscreen:mx-auto img-fluid" alt="Warranty">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 m-0 p-0 w-full relative gap-10 lg:gap-x-10 lg:gap-y-[80px]">
+                <div class="card flex flex-col items-center justify-center w-full gap-7 m-0 p-0">
+                    <a href="javascript:void(0);" class="img portrait">
+                        <img src="../assets/images/irrigation-pro.jpg" width="424" height="424" class="img-fluid" alt="R1/1A">
+                    </a>
+                    <div class="flex flex-col items-center justify-center w-full gap-6 m-0 p-0 relative">
+                        <div class="details text-center w-full">
+                            <div class="title title-Darkblue title-Redwing uppercase m-0 p-0">
+                                <h3>
+                                    R1/1A
+                                </h3>
+                            </div>
+                            <span class="divider-green"></span>
+                            <div class="title title-Gray title-Redwing uppercase mb-16 last:mb-0 m-0 p-0">
+                                <h5>
+                                    R-Series
+                                </h5>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Irrigation Reel
+                                </p>
+                            </div>
+                        </div>
+                        <div class="btn-custom">
+                            <a href="javascript:void(0);" class="btn btn-green">
+                                Learn More
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="w-full lg:flex-1 lg:order-1 order-2">
-                    <div class="zigzag-content">
-                        <div class="title title-Darkblue title-Redwing uppercase mb-16 last:mb-0 text-left">
-                            <h2>
-                                Irrigation Reels
-                            </h2>
+                <div class="card flex flex-col items-center justify-center w-full gap-7 m-0 p-0">
+                    <a href="javascript:void(0);" class="img portrait">
+                        <img src="../assets/images/irrigation-pro.jpg" width="424" height="424" class="img-fluid" alt="R1/1A">
+                    </a>
+                    <div class="flex flex-col items-center justify-center w-full gap-6 m-0 p-0 relative">
+                        <div class="details text-center w-full">
+                            <div class="title title-Darkblue title-Redwing uppercase m-0 p-0">
+                                <h3>
+                                    R1/1A
+                                </h3>
+                            </div>
+                            <span class="divider-green"></span>
+                            <div class="title title-Gray title-Redwing uppercase mb-16 last:mb-0 m-0 p-0">
+                                <h5>
+                                    R-Series
+                                </h5>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Irrigation Reel
+                                </p>
+                            </div>
                         </div>
-                        <div class="content mb-24 last:mb-0 text-left">
-                            <p>
-                                OCMIS has over 50 years of proven experience in the industry, manufactures the complete machine, is financially sound, and has been present in this market for over 24 years. OCMIS was the first to develop and patent the Vario Rain turbine/gearbox which is the most efficient turbine and gearbox on the market. Our patented turbine requires less water and pressure to run the gearbox, allowing more water and pressure to flow through to the gun! Look at the throw!
-                            </p>
-                        </div>
-                        <div class="btn-custom text-left">
+                        <div class="btn-custom">
                             <a href="javascript:void(0);" class="btn btn-green">
                                 Learn More
                             </a>
@@ -281,364 +331,9 @@
         </div>
     </section>
     <!-- zigzag End -->
-
-    <!-- zigzag Start -->
-    <section class="zigzag-img-content py-40 lg:py-80">
-        <div class="container-fluid xl3:container">
-            <div class="zigzag-gap flex flex-wrap items-center justify-center w-full m-0 p-0 relative lgscreen:gap-10">
-                <div class="w-full lg:order-1 order-1 lg:w-6/12 xl:max-w-[40%]">
-                    <div class="img landscape">
-                        <img src="../assets/images/irrigationbooms.jpg" width="626" height="550" class="xlscreen:h-auto xlscreen:block xlscreen:mx-auto img-fluid" alt="Warranty">
-                    </div>
-                </div>
-                <div class="w-full lg:flex-1 lg:order-2 order-2">
-                    <div class="zigzag-content">
-                        <div class="title title-Darkblue title-Redwing uppercase mb-16 last:mb-0 text-left">
-                            <h2>
-                                Irrigation Booms
-                            </h2>
-                        </div>
-                        <div class="content mb-24 last:mb-0 text-left">
-                            <p>
-                                OCMIS has a parts and technical service depot centrally located outside of Oklahoma City, OK (KID) which inventories parts to support your machines. We ship next-day air to anywhere in the USA. OCMIS offers a galvanized chassis and gun cart as standard on their complete line of travelers. No one makes a broader range of sizes than OCMIS ranging from 1” to 5” i.d. and from 300’ to 2500’ in length. OCMIS has a large network of dealers who buy direct from the factory in Italy and therefore have a competitive price advantage often exceeding 20%. OCMIS is ISO 9001 certified - an international standard for quality and productivity.
-                            </p>
-                        </div>
-                        <div class="btn-custom text-left">
-                            <a href="javascript:void(0);" class="btn btn-green">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- zigzag End -->
-
-    <!-- zigzag Start -->
-    <section class="zigzag-img-content py-40 lg:py-80">
-        <div class="container-fluid xl3:container">
-            <div class="zigzag-gap flex flex-wrap items-center justify-center w-full m-0 p-0 relative lgscreen:gap-10">
-                <div class="w-full lg:order-2 order-1 lg:w-6/12 xl:max-w-[40%]">
-                    <div class="img landscape">
-                        <img src="../assets/images/scovapumps.jpg" width="626" height="550" class="xlscreen:h-auto xlscreen:block xlscreen:mx-auto img-fluid" alt="scova pumps"/>
-                    </div>
-                </div>
-                <div class="w-full lg:flex-1 lg:order-1 order-2">
-                    <div class="zigzag-content">
-                        <div class="title title-Darkblue title-Redwing uppercase mb-16 last:mb-0 text-left">
-                            <h2>
-                                Scova pumps
-                            </h2>
-                        </div>
-                        <div class="content mb-24 last:mb-0 text-left">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur. Tortor eget lobortis vel nunc ut turpis ut. Aliquam integer integer massa maecenas feugiat sem. Malesuada enim id sit feugiat. Tincidunt scelerisque nulla at scelerisque et at felis sagittis consectetur. Donec dolor elementum quam vel morbi cras amet vel. Quam pharetra pharetra bibendum ut neque risus facilisi. Lectus arcu aenean nulla mauris tristique. Sit sollicitudin eget egestas velit viverra tristique eu vivamus. Convallis ac libero fames massa ut ullamcorper ultrices.
-                            </p>
-                        </div>
-                        <div class="btn-custom text-left">
-                            <a href="javascript:void(0);" class="btn btn-green">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- zigzag End -->
-
-    <!-- zigzag Start -->
-    <section class="zigzag-img-content py-40 lg:py-80">
-        <div class="container-fluid xl3:container">
-            <div class="zigzag-gap flex flex-wrap items-center justify-center w-full m-0 p-0 relative lgscreen:gap-10">
-                <div class="w-full lg:order-1 order-1 lg:w-6/12 xl:max-w-[40%]">
-                    <div class="img landscape">
-                        <img src="../assets/images/microrain.jpg" width="626" height="550" class="xlscreen:h-auto xlscreen:block xlscreen:mx-auto img-fluid" alt="micro rain">
-                    </div>
-                </div>
-                <div class="w-full lg:flex-1 lg:order-2 order-2">
-                    <div class="zigzag-content">
-                        <div class="title title-Darkblue title-Redwing uppercase mb-16 last:mb-0 text-left">
-                            <h2>
-                                Micro rain
-                            </h2>
-                        </div>
-                        <div class="content mb-24 last:mb-0 text-left">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur. Tortor eget lobortis vel nunc ut turpis ut. Aliquam integer integer massa maecenas feugiat sem. Malesuada enim id sit feugiat. Tincidunt scelerisque nulla at scelerisque et at felis sagittis consectetur. Donec dolor elementum quam vel morbi cras amet vel. Quam pharetra pharetra bibendum ut neque risus facilisi. Lectus arcu aenean nulla mauris tristique. Sit sollicitudin eget egestas velit viverra tristique eu vivamus. Convallis ac libero fames massa ut ullamcorper ultrices.
-                            </p>
-                        </div>
-                        <div class="btn-custom text-left">
-                            <a href="javascript:void(0);" class="btn btn-green">
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- zigzag End -->
-
-    <!-- irrigation-box slider Start -->
-    <section class="irrigation-box-wrapper py-40 lg:py-80 bg-Blue-300">
-        <div class="container-fluid xl3:container">
-            <div class="flex flex-wrap w-full items-center justify-center m-0 mb-40 p-0 relative lg:text-center">
-                <div class="title title-White title-sub uppercase title-Redwing mb-24 last:mb-0 !flex flex-col gap-2">
-                    <h2>
-                        OCMIS Irrigation
-                    </h2>
-                    <h4>
-                        The Largest Irrigation Reel Manufacturer in the World
-                    </h4>
-                </div>
-                <div class="content white max-w-[658px]">
-                    <p>
-                        OCMIS is the largest manufacturer in the world of hard hose travelers and rose to number one due to their superior quality, performance and features.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid mdscreen:!px-0 xl3:container">
-            <div class="irrigation-slider swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide flex flex-col items-center justify-center gap-6">
-                    <div class="img landscape">
-                        <img src="../assets/images/slide1.jpg" width="397" height="283" class="img-fluid" alt="Irrigation Travelers & Reels">
-                    </div>
-                    <div class="details text-center px-16">
-                        <div class="title title-White title-Redwing uppercase mb-8 last:mb-0">
-                            <h4>Irrigation Travelers & Reels</h4>
-                        </div>
-                        <div class="content white mb-24 last:mb-0">
-                            <p>
-                                We have many models of Irrigation Reels to choose from– Our standard “R-Series” and our “VR series of Vario Rain” models with the most efficient turbine on the market.
-                            </p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide flex flex-col items-center justify-center gap-6">
-                    <div class="img landscape">
-                        <img src="../assets/images/slide2.jpg" width="397" height="283" class="img-fluid" alt="Spray Booms">
-                    </div>
-                    <div class="details text-center px-16">
-                        <div class="title title-White title-Redwing uppercase mb-8 last:mb-0">
-                            <h4>Spray Booms</h4>
-                        </div>
-                        <div class="content white mb-24 last:mb-0">
-                            <p>
-                                OCMIS spray booms' advantage are due to their speed and ease of use. They are made of galvanized steel to increase quality and lifecycle.
-                            </p>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide flex flex-col items-center justify-center gap-6">
-                    <div class="img landscape">
-                        <img src="../assets/images/slide3.jpg" width="397" height="283" class="img-fluid" alt="Scova Engine Pumps">
-                    </div>
-                    <div class="details text-center px-16">
-                        <div class="title title-White title-Redwing uppercase mb-8 last:mb-0">
-                            <h4>Scova Engine Pumps</h4>
-                        </div>
-                        <div class="content white mb-24 last:mb-0">
-                            <p>
-                                Available this fall due to required “Tier 4” engine manufacturing delays worldwide.
-                            </p>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="irrigation-pagination swiper-pagination"></div>
-            </div>
-        </div>
-    </section>
-    <!-- irrigation-box slider End -->
-
-    <!-- Advantages slider Start -->
-    <section class="advantages-wrapper py-40 lg:py-80 bg-Aquamarine">
-        <div class="container-fluid xl3:container">
-            <div class="flex flex-wrap w-full items-center justify-center m-0 mb-40 p-0 relative text-center">
-                <div class="w-full lg:max-w-[1352px]">
-                    <div class="title title-White uppercase title-Redwing mb-40 last:mb-0">
-                        <h2>
-                            Top 5 Advantages to the Vario Rain
-                        </h2>
-                    </div>
-                    <div class="img mb-40 last:mb-0">
-                        <img src="../assets/images/turbine.png" width="808" height="489" class="max-w-full h-auto block mx-auto" alt="turbine">
-                    </div>
-                    <div class="content white">
-                        <p>
-                            Irrigation machines of the new (patented) series VARIO RAIN derive from Ocmis continuous investment in R&D. An innovative interpretation of the traditional hosereel irrigation machines. Technology improvements have been made in design and construction and allowed us to reach our target: a new range of machines, innovative and unique in their genre, with lower pressure drops, easy to use, versatile, robust and needing minimum maintenance.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid lgscreen:!px-0 xl3:container">
-            <div class="advantages-slider swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="card bg-White bg-opacity-10 border-1 border-solid border-White rounded-5 p-24">
-                            <div class="flex flex-col items-center justify-center gap-10">
-                                <div class="img">
-                                    <img src="../assets/images/advantages-ico1.png" width="100" height="100" class="max-w-full h-auto block mx-auto" alt="">
-                                </div>
-                                <div class="content white">
-                                    <p>
-                                        The most efficient turbine on the market-- requiring less water and pressure to run gearbox, allowing more water and pressure to flow through to the gun.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card bg-White bg-opacity-10 border-1 border-solid border-White rounded-5 p-24">
-                            <div class="flex flex-col items-center justify-center gap-10">
-                                <div class="img">
-                                    <img src="../assets/images/advantages-ico1.png" width="100" height="100" class="max-w-full h-auto block mx-auto" alt="">
-                                </div>
-                                <div class="content white">
-                                    <p>
-                                        The most efficient turbine on the market-- requiring less water and pressure to run gearbox, allowing more water and pressure to flow through to the gun.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card bg-White bg-opacity-10 border-1 border-solid border-White rounded-5 p-24">
-                            <div class="flex flex-col items-center justify-center gap-10">
-                                <div class="img">
-                                    <img src="../assets/images/advantages-ico1.png" width="100" height="100" class="max-w-full h-auto block mx-auto" alt="">
-                                </div>
-                                <div class="content white">
-                                    <p>
-                                        The most efficient turbine on the market-- requiring less water and pressure to run gearbox, allowing more water and pressure to flow through to the gun.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card bg-White bg-opacity-10 border-1 border-solid border-White rounded-5 p-24">
-                            <div class="flex flex-col items-center justify-center gap-10">
-                                <div class="img">
-                                    <img src="../assets/images/advantages-ico1.png" width="100" height="100" class="max-w-full h-auto block mx-auto" alt="">
-                                </div>
-                                <div class="content white">
-                                    <p>
-                                        The most efficient turbine on the market-- requiring less water and pressure to run gearbox, allowing more water and pressure to flow through to the gun.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card bg-White bg-opacity-10 border-1 border-solid border-White rounded-5 p-24">
-                            <div class="flex flex-col items-center justify-center gap-10">
-                                <div class="img">
-                                    <img src="../assets/images/advantages-ico1.png" width="100" height="100" class="max-w-full h-auto block mx-auto" alt="">
-                                </div>
-                                <div class="content white">
-                                    <p>
-                                        The most efficient turbine on the market-- requiring less water and pressure to run gearbox, allowing more water and pressure to flow through to the gun.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-scrollbar"></div>
-            </div>
-        </div>
-    </section>
-    <!-- Advantages slider End -->
 
     <!-- footer Start -->
-    <footer>
-        <div class="footer-gallery py-40">
-            <div class="gallery-slider swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="img landscape">
-                            <img src="../assets/images/gallery2.jpg" width="260" height="200" class="img-fluid" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="img landscape">
-                            <img src="../assets/images/gallery3.jpg" width="260" height="200" class="img-fluid" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="img landscape">
-                            <img src="../assets/images/gallery4.jpg" width="260" height="200" class="img-fluid" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="img landscape">
-                            <img src="../assets/images/gallery5.jpg" width="260" height="200" class="img-fluid" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="img landscape">
-                            <img src="../assets/images/gallery1.jpg" width="260" height="200" class="img-fluid" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="img landscape">
-                            <img src="../assets/images/gallery2.jpg" width="260" height="200" class="img-fluid" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="img landscape">
-                            <img src="../assets/images/gallery3.jpg" width="260" height="200" class="img-fluid" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="img landscape">
-                            <img src="../assets/images/gallery4.jpg" width="260" height="200" class="img-fluid" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="img landscape">
-                            <img src="../assets/images/gallery5.jpg" width="260" height="200" class="img-fluid" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="img landscape">
-                            <img src="../assets/images/gallery1.jpg" width="260" height="200" class="img-fluid" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="img landscape">
-                            <img src="../assets/images/gallery2.jpg" width="260" height="200" class="img-fluid" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="img landscape">
-                            <img src="../assets/images/gallery3.jpg" width="260" height="200" class="img-fluid" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="img landscape">
-                            <img src="../assets/images/gallery4.jpg" width="260" height="200" class="img-fluid" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="img landscape">
-                            <img src="../assets/images/gallery5.jpg" width="260" height="200" class="img-fluid" alt="gallery"/>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="img landscape">
-                            <img src="../assets/images/gallery1.jpg" width="260" height="200" class="img-fluid" alt="gallery"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <footer class="bg-Gray-100">
         <div class="container-fluid">
             <div class="footer-bottom relative py-40">            
                 <div class="flex flex-wrap items-center justify-center m-0 p-0 w-full relative lg:gap-6 mb-40 last:mb-0">
