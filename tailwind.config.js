@@ -46,11 +46,11 @@ module.exports = {
         container: {
             center: true,
             padding: '15px',
-            xl2: '1440px',
-            xl: '1280px',
-            lg: '940px',
-            md: '720px',
-            sm: '600px',
+            // xl2: '1440px',
+            // xl: '1280px',
+            // lg: '940px',
+            // md: '720px',
+            // sm: '600px',
         },
         zIndex: {
             '1_minus': '-1',
@@ -377,6 +377,7 @@ module.exports = {
             screens: {
                 xl: { 'min': '1200px' },
                 xxl: {'min': '1366px'},
+                1400: {'min': '1400px'},
                 xxxl: { 'min': '1440px' },
                 xl2: { 'min': '1510px' },  
                 xl3: { 'min': '2000px' },              
@@ -394,11 +395,12 @@ module.exports = {
                 xsscreen2: { 'max': '479px' },
                 xsscreen3: { 'max': '374px' },
                 xsscreen: { 'max': '320px' },  
-                max_width_768: {'raw': '(max-width: 1199.9px) and (min-width: 768px)'},
-                max_width_1024: {'raw': '(max-width: 1199.9px) and (min-width: 1024px)'},
-                max_width_1200: {'raw': '(max-width: 1365px) and (min-width: 1200px)'},
-                min_width_1200: {'raw': '(max-width: 1505px) and (min-width: 1200px)'}, 
-                max_width_1400: {'raw': '(max-width: 1579px) and (min-width: 1400px)'},
+                min_width_768: {'raw': '(max-width: 1023px) and (min-width: 768px)'},
+                min_width_1024: {'raw': '(max-width: 1199.9px) and (min-width: 1024px)'},
+                max_width_1400: {'raw': '(max-width: 1400px) and (min-width: 1024px)'},
+                max_width_1365: {'raw': '(max-width: 1365px) and (min-width: 1200px)'},
+                max_width_1505: {'raw': '(max-width: 1505px) and (min-width: 1200px)'}, 
+                max_width_1579: {'raw': '(max-width: 1579px) and (min-width: 1400px)'},
             }
         }
     },
@@ -409,6 +411,17 @@ module.exports = {
         // extend: {},
     },
     plugins: [
-        
+        function ({ addComponents }) {
+            addComponents({
+
+                '.container': {
+                    maxWidth: '100%',
+                    '@screen xl3': {
+                        maxWidth: '1920px',
+                        margin: 'auto',
+                    },
+                },
+            })
+        }
     ],
 }
