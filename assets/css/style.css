@@ -138,6 +138,10 @@
   b, strong {
     @apply text-Blue-100
   }
+  .content.gray b,
+  .content.gray strong {
+    @apply text-Gray-200;
+  }
 }
 
 @layer components {
@@ -150,7 +154,7 @@
   }
 
   .btn-link-ico {
-    @apply flex flex-row gap-[8px] items-center justify-center m-0 p-0 text-Gray-200 text-16 leading-20 font-300 capitalize duration-300 delay-150 ease-linear hover:text-DarkBlue;
+    @apply flex flex-row gap-[8px] items-center justify-center m-0 p-0 text-Gray-200 text-16 leading-20 font-300 duration-300 delay-150 ease-linear hover:text-DarkBlue;
   }
   .btn-link-ico:hover svg path,
   .btn-link-ico:hover svg  {
@@ -158,6 +162,10 @@
   }
   .btn-link-ico:hover svg path {
     @apply fill-DarkBlue
+  }
+
+  .btn-link-blue {
+    @apply text-Blue-100 font-700 hover:text-DarkBlue smscreen:text-12;
   }
 
   .btn-h-green {
@@ -180,7 +188,11 @@
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
     filter: blur(10px);
-  }  
+  } 
+  
+  .btn-link {
+    @apply inline-block text-DarkBlue leading-[20px] font-Outfit font-400 p-0 relative overflow-hidden capitalize duration-300 delay-150 ease-linear z-1 hover:text-Blue-100;
+  }
 
   .regular__transition {
     @apply transition-all duration-300 delay-150 ease-linear;
@@ -477,13 +489,16 @@
   .irrigation-slider .swiper-slide-active .details {
     @apply mdscreen:visible mdscreen:opacity-100
   }
-  .irrigation-slider .irrigation-pagination {
+  .irrigation-slider .irrigation-pagination,
+  .partners-slider .partner-pagination {
     @apply relative inset-0 gap-4 mt-24;
   }
-  .irrigation-slider .irrigation-pagination .swiper-pagination-bullet {
+  .irrigation-slider .irrigation-pagination .swiper-pagination-bullet,
+  .partners-slider .partner-pagination .swiper-pagination-bullet {
     @apply w-[12px] h-[12px] border-none bg-Green opacity-30 duration-300 delay-150 ease-linear;
   }
-  .irrigation-slider .irrigation-pagination .swiper-pagination-bullet-active {
+  .irrigation-slider .irrigation-pagination .swiper-pagination-bullet-active,
+  .partners-slider .partner-pagination .swiper-pagination-bullet-active {
     @apply opacity-100
   }
   /* Irrigation slider End */
@@ -695,47 +710,56 @@
 
   /* features-wrapper Start */
   .table-wrapper table {
-    @apply border-collapse m-0 p-0 w-full table-fixed
+    @apply lg:border-separate m-0 p-0 w-full lg:table-fixed lg:border-spacing-[10px]
   }
   .table-wrapper table tr {
-    @apply mb-40 md:mb-10 last:mb-0;
+    @apply lgscreen:mb-40 last:mb-0;
   }
   .table-wrapper table thead {
-    @apply mdscreen:border-0 mdscreen:h-[1px] mdscreen:-m-[1px] mdscreen:overflow-hidden mdscreen:p-0 mdscreen:absolute mdscreen:w-[1px];
+    @apply lgscreen:border-0 lgscreen:h-[1px] lgscreen:-m-[1px] lgscreen:overflow-hidden lgscreen:p-0 lgscreen:absolute lgscreen:w-[1px];
   }
   .table-wrapper table tr th,
   .table-wrapper table tr td {
-    @apply p-5
+    @apply p-5 align-top
   }
-  .table-wrapper .table-blue table tr th span {
-    @apply bg-Blue-100 text-White font-Outfit font-700 text-16 leading-[20px] m-0 py-5 px-10 lg:py-10 lg:px-20 text-left block uppercase;
+  .table-wrapper .table-blue table tr th {
+    @apply bg-Blue-100 text-White font-Outfit font-700 text-16 leading-[20px] m-0 py-5 px-10 lg:py-10 lg:px-20 text-left uppercase;
   }
-  .table-wrapper .table-blue table tr td span {
-    @apply bg-transparent border-1 border-solid border-Blue-100 text-Gray-200 font-Outfit font-400 text-16 leading-[20px] m-0 py-5 px-10 lg:py-10 lg:px-20 text-left block uppercase;
+  .table-wrapper .table-blue table tr td {
+    @apply bg-transparent border-1 border-solid border-Blue-100 text-Gray-200 font-Outfit font-400 text-16 leading-[20px] m-0 py-5 px-10 lg:py-10 lg:px-20 text-left uppercase;
+  }
+  .table-wrapper .table-blue table tr td[rowspan] {
+    @apply align-middle
+  }
+  .table-wrapper .table-blue table tr td span p {
+    @apply mb-10 last:mb-0 leading-20;
   }
 
-  .table-wrapper .table-blue.white table tr td span {
-    @apply bg-transparent border-1 border-solid border-Blue-100 text-White font-Outfit font-400 text-16 leading-[20px] m-0 py-5 px-10 lg:py-10 lg:px-20 text-left block uppercase;
+  .table-wrapper .table-blue.white table tr td {
+    @apply bg-transparent border-1 border-solid border-Blue-100 text-White font-Outfit font-400 text-16 leading-[20px] m-0 py-5 px-10 lg:py-10 lg:px-20 text-left uppercase;
   }
 
-  .table-wrapper .table-darkblue table tr th span {
-    @apply bg-DarkBlue text-White font-Outfit font-700 text-16 leading-[20px] m-0 py-5 px-10 lg:py-10 lg:px-20 text-left block uppercase;
+  .table-wrapper .table-darkblue table tr th {
+    @apply bg-DarkBlue text-White font-Outfit font-700 text-16 leading-[20px] m-0 py-5 px-10 lg:py-10 lg:px-20 text-left uppercase;
   }
-  .table-wrapper .table-darkblue table tr td span {
-    @apply bg-transparent border-1 border-solid border-DarkBlue text-White font-Outfit font-400 uppercase text-16 leading-[20px] m-0 py-5 px-10 lg:py-10 lg:px-20 text-left block;
+  .table-wrapper .table-darkblue table tr td {
+    @apply bg-transparent border-1 border-solid border-DarkBlue text-White font-Outfit font-400 uppercase text-16 leading-[20px] m-0 py-5 px-10 lg:py-10 lg:px-20 text-left;
   }
-  @screen mdscreen {
+  @screen lgscreen {
     .table-wrapper table tr {
       @apply flex flex-col items-center justify-start w-full gap-[10px]
     }
     .table-wrapper .table-blue table tr td {
-      @apply flex flex-wrap items-center w-full m-0 border-1 border-solid border-Blue-100 p-0;
+      @apply flex flex-wrap items-stretch m-0 w-full border-1 border-solid border-Blue-100 p-0;
+    }
+    .table-wrapper .table-blue.white table tr td {
+      @apply p-0
     }
     .table-wrapper .table-darkblue table tr td {
-      @apply flex flex-wrap items-center w-full m-0 border-1 border-solid border-DarkBlue p-0;
+      @apply flex flex-wrap items-stretch m-0 w-full border-1 border-solid border-DarkBlue p-0;
     }
     .table-wrapper table tr td span {
-      @apply !border-0 m-0 text-left block flex-1;
+      @apply !border-0 m-0 text-left flex flex-col justify-center p-10 flex-1;
     }
     .table-wrapper .table-blue table tr td:before {
       content: attr(data-label);
@@ -744,6 +768,14 @@
     .table-wrapper .table-darkblue table tr td:before {
       content: attr(data-label);
       @apply block font-700 flex-2 py-10 px-20 bg-DarkBlue text-White;
+    }
+  }
+  @screen smscreen {
+    .table-wrapper .table-blue table tr td:before {
+      @apply flex-1;
+    }
+    .table-wrapper .table-darkblue table tr td:before {
+      @apply flex-1;
     }
   }
   /* features-wrapper End */
@@ -760,8 +792,35 @@
   }
   /* career-landing End */
 
-  
-
+  /* brochure-wrapper Start */
+  .brochure-wrapper .card .img,
+  .brochure-wrapper .card .img img,
+  .brochure-wrapper .card .box,
+  .brochure-wrapper .card .box .title h4 {
+    @apply duration-300 delay-150 ease-linear
+  }
+  .brochure-wrapper .card .img {
+    @apply -mb-[76px]
+  }
+  .brochure-wrapper .card:hover .img {
+    @apply -mb-[20px]
+  }
+  .brochure-wrapper .card:hover .img img {
+    @apply drop-shadow-none;
+  }
+  .brochure-wrapper .card .box {
+    @apply pt-[76px]
+  }
+  .brochure-wrapper .card:hover .box {
+    @apply pt-[20px] bg-DarkBlue
+  }
+  .brochure-wrapper .card:hover .box .title h4 {
+    @apply text-White
+  }
+  .brochure-wrapper .card:hover .box .btn-link {
+    @apply text-White hover:text-Green;
+  }
+  /* brochure-wrapper End */
 }
 
 /* Responsive CSS Start */

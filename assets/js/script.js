@@ -171,6 +171,61 @@ $(document).ready(function ($) {
             advantagesslide.update();
         });
     }
+    if ($('.partners-wrapper').length) {
+        var advantagesslide = new Swiper(".partners-slider", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            grabCursor: true,
+            breakpoints: {
+                1366: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                    scrollbar: false,
+                    pagination: false,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                    centeredSlides: false,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                },
+                640: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 40,
+                    centeredSlides: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                },
+                320: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                },
+            },
+        });
+        window.addEventListener('resize', function () {
+            advantagesslide.update();
+        });
+    }
 
     if ($('.footer-gallery').length) {
         var galleryslide = new Swiper(".gallery-slider", {
@@ -225,6 +280,43 @@ $(document).ready(function ($) {
         });
     }
 
+    if ($('.brochure-wrapper').length) {
+        var galleryslide = new Swiper(".brochure-slider", {
+            loop: false,
+            slidesPerView: 1,
+            spaceBetween: 40,
+            centeredSlides: false,
+            speed: 2000,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20,
+                    centeredSlides: true,
+                    autoplay: false,
+                },
+                640: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 22,
+                    centeredSlides: true,
+                    autoplay: false,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 45,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 90,
+                    
+                },
+            },
+        });
+    }
+
     // accordion Start
     if($('.faq-wrapper').length) {
         // $('.accordion > .accordion-item > .accordion-item-body').slideUp();
@@ -255,7 +347,25 @@ $(document).ready(function ($) {
             });
         });
     }
-
+    
+    // Function to set rowspan attribute dynamically
+    if ($(".table-wrapper").length) {
+        function calculateFirstCellRowspan() {
+            var table = $(".rows table"); // Get the table using jQuery
+            var tbody = table.find("tbody"); // Get the tbody element within the table
+            var firstRow = tbody.find("tr:first"); // Get the first row of tbody
+            var firstCell = firstRow.find("td:first"); // Get the first cell of the first row
+        
+            // Calculate the number of rows in the tbody
+            var rowCount = tbody.find("tr").length;
+        
+            // Set rowspan attribute for the first cell
+            firstCell.attr("rowspan", rowCount);
+          }
+        
+          // Call the function after the table is loaded or content is changed
+          calculateFirstCellRowspan();
+    }
     
 });
 

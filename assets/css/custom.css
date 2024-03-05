@@ -8,6 +8,10 @@
         @apply relative font-Outfit font-400 text-16 leading-20 m-0 p-0;
     }
 
+    .white.list-globle ul li {
+        @apply text-White;
+    }
+
     .list-globle ul li a {
         @apply text-Blue-100 font-700 duration-300 delay-150 ease-linear hover:text-DarkBlue hover:underline;
     }
@@ -21,11 +25,40 @@
         @apply absolute top-5 left-0 w-[10px] h-[10px] bg-DarkBlue rounded-100;
     }
 
-
 }
 
+@layer utilities {
 
+    /* search result strat*/
+    .mockups-search-wrapper .portrait {
+        @apply relative overflow-hidden w-full block pt-[100%] bg-Blue-100/30;
+    }
 
-/* private-policy start*/
+    .mockups-search-wrapper .portrait img {
+        @apply absolute top-0 left-0 scale-100 mix-blend-normal transition-all duration-500 delay-150 ease-linear;
+    }
 
-/* private-policy End*/
+    .mockups-search-wrapper .card:hover .portrait img {
+        @apply scale-125 grayscale mix-blend-color transition-all duration-300 delay-150 ease-linear;
+    }
+
+    /* search result End */
+
+    /*our patners start*/
+
+    .partners-slider .contect-details ul {
+        @apply flex flex-col gap-4 items-center justify-center;
+    }
+    .partners-slider .card {
+        @apply block w-full shadow-card;
+    }
+    .partners-slider .card .portrait {
+        @apply relative overflow-hidden w-full block pt-[100%]
+    }
+    .partners-slider .card .portrait img {
+        @apply absolute top-0 left-0 w-full h-full object-contain;
+    }
+
+    /*our patners End*/
+
+}

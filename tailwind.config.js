@@ -292,6 +292,8 @@ module.exports = {
             'menu': '0px 4px 18px rgba(0, 0, 0, 0.2)',
             'header': '0px 4px 12px rgba(0, 0, 0, 0.07)',
             'social': '0px 4px 2px rgba(0, 0, 0, 0.2)',
+            'card': '4px 4px 40px rgba(0, 0, 0, 0.08)',
+            'brochure': '0px 4px 10px rgba(0, 0, 0, 0.2)',
         },
         borderWidth: {
             1: '1px',
@@ -313,7 +315,9 @@ module.exports = {
             offered: '0px 4px 4px rgba(0, 153, 219, 0.2)',
             'testimonial-card': '0px 4px 10px 0px rgba(0, 0, 0, 0.25)',
             'newsletter': '0px 4px 10px 0px rgba(0, 0, 0, 0.28)',
+            'card': '4px 4px 40px rgba(0, 0, 0, 0.08)',
         },
+
         outline: {
             none: 'none',
         },
