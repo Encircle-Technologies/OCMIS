@@ -1,6 +1,7 @@
 @import "tailwindcss/utilities";
 @import "tailwindcss/base";
 @import "tailwindcss/components";
+@import "custom.css";
 
 
 @layer base {
@@ -111,6 +112,9 @@
   .content p a {
     @apply no-underline ease-in duration-300 delay-150 text-Blue-100 font-Outfit font-400 hover:text-DarkBlue;
   }
+  .content.bold p a {
+    @apply font-700;
+  }
   .content p {
     @apply text-Gray-200 text-16 leading-24 font-400 not-italic relative block mb-20 last:mb-0;
   }
@@ -131,11 +135,8 @@
     @apply text-White;
   }
 
-  .list-columntwo ul {
-    @apply flex flex-wrap items-start justify-start m-0 p-0 w-full relative gap-x-[10px];
-  }
-  .list-columntwo ul li {
-    @apply w-full lg:max-w-[48%]
+  b, strong {
+    @apply text-Blue-100
   }
 }
 
@@ -230,6 +231,14 @@
   .title-Darkblue h6 {
     @apply text-DarkBlue;
   }
+  .title-Green h1,
+  .title-Green h2,
+  .title-Green h3,
+  .title-Green h4,
+  .title-Green h5,
+  .title-Green h6 {
+    @apply text-Green;
+  }
 
   .title-Gray h1,
   .title-Gray h2,
@@ -282,15 +291,34 @@
     @apply w-full h-[1px] bg-Green my-16 block;
   }
 
+  .btn-inline {
+    @apply flex mdscreen:flex-col md:flex-wrap items-center justify-center m-0 p-0 w-full gap-6;
+  }
+  .btn-full .btn {
+    @apply w-full
+  }
+
   .list-two-column ul {
-    @apply columns-2 xl:gap-x-[100px] lg:gap-x-[55px]
+    @apply mdscreen:flex mdscreen:flex-col mdscreen:gap-[10px] md:columns-2 xl:gap-x-[100px] md:gap-x-[55px]
   }
   .list-two-column ul li {
-    @apply relative font-Outfit font-400 text-16;
+    @apply relative font-Outfit font-400 text-16 leading-20 m-0 md:mb-10 p-0 pl-20 last:mb-0;
+  }
+  .list-two-column.green-dot ul li:before {
+    content: "";
+    @apply absolute top-5 left-0 w-[10px] h-[10px] bg-Green rounded-100;
+  }
+  .list-two-column.blue-dot ul li:before {
+    content: "";
+    @apply absolute top-5 left-0 w-[10px] h-[10px] bg-DarkBlue rounded-100;
   }
   .list-two-column.white ul li {
-    @apply text-White
+    @apply text-White;
   }
+  .list-two-column.gray ul li {
+    @apply text-Gray-200;
+  }
+  
 }
 
 @layer utilities {
@@ -664,6 +692,76 @@
     @apply w-full h-[1px] min-h-0 min_width_768:w-[1px] min_width_768:h-[100%] min_width_768:min-h-[30px] max_width_1400:w-full max_width_1400:h-[1px] max_width_1400:min-h-0 1400:w-[1px] 1400:h-[100%] 1400:min-h-[30px] bg-DarkBlue block
   }
   /* pdp-wrapper End */
+
+  /* features-wrapper Start */
+  .table-wrapper table {
+    @apply border-collapse m-0 p-0 w-full table-fixed
+  }
+  .table-wrapper table tr {
+    @apply mb-40 md:mb-10 last:mb-0;
+  }
+  .table-wrapper table thead {
+    @apply mdscreen:border-0 mdscreen:h-[1px] mdscreen:-m-[1px] mdscreen:overflow-hidden mdscreen:p-0 mdscreen:absolute mdscreen:w-[1px];
+  }
+  .table-wrapper table tr th,
+  .table-wrapper table tr td {
+    @apply p-5
+  }
+  .table-wrapper .table-blue table tr th span {
+    @apply bg-Blue-100 text-White font-Outfit font-700 text-16 leading-[20px] m-0 py-5 px-10 lg:py-10 lg:px-20 text-left block uppercase;
+  }
+  .table-wrapper .table-blue table tr td span {
+    @apply bg-transparent border-1 border-solid border-Blue-100 text-Gray-200 font-Outfit font-400 text-16 leading-[20px] m-0 py-5 px-10 lg:py-10 lg:px-20 text-left block uppercase;
+  }
+
+  .table-wrapper .table-blue.white table tr td span {
+    @apply bg-transparent border-1 border-solid border-Blue-100 text-White font-Outfit font-400 text-16 leading-[20px] m-0 py-5 px-10 lg:py-10 lg:px-20 text-left block uppercase;
+  }
+
+  .table-wrapper .table-darkblue table tr th span {
+    @apply bg-DarkBlue text-White font-Outfit font-700 text-16 leading-[20px] m-0 py-5 px-10 lg:py-10 lg:px-20 text-left block uppercase;
+  }
+  .table-wrapper .table-darkblue table tr td span {
+    @apply bg-transparent border-1 border-solid border-DarkBlue text-White font-Outfit font-400 uppercase text-16 leading-[20px] m-0 py-5 px-10 lg:py-10 lg:px-20 text-left block;
+  }
+  @screen mdscreen {
+    .table-wrapper table tr {
+      @apply flex flex-col items-center justify-start w-full gap-[10px]
+    }
+    .table-wrapper .table-blue table tr td {
+      @apply flex flex-wrap items-center w-full m-0 border-1 border-solid border-Blue-100 p-0;
+    }
+    .table-wrapper .table-darkblue table tr td {
+      @apply flex flex-wrap items-center w-full m-0 border-1 border-solid border-DarkBlue p-0;
+    }
+    .table-wrapper table tr td span {
+      @apply !border-0 m-0 text-left block flex-1;
+    }
+    .table-wrapper .table-blue table tr td:before {
+      content: attr(data-label);
+      @apply block font-700 flex-2 py-10 px-20 bg-Blue-100 text-White;
+    }
+    .table-wrapper .table-darkblue table tr td:before {
+      content: attr(data-label);
+      @apply block font-700 flex-2 py-10 px-20 bg-DarkBlue text-White;
+    }
+  }
+  /* features-wrapper End */
+
+  /* career-landing strat */
+  .career-wrapper .portrait {
+    @apply relative overflow-hidden w-full block pt-[100%] bg-Blue-100/30;
+  }
+  .career-wrapper .portrait img {
+    @apply absolute top-0 left-0 scale-100 mix-blend-normal transition-all duration-500 delay-150 ease-linear;
+  }
+  .career-wrapper .card:hover .portrait img {
+    @apply scale-125 grayscale mix-blend-color transition-all duration-300 delay-150 ease-linear;
+  }
+  /* career-landing End */
+
+  
+
 }
 
 /* Responsive CSS Start */

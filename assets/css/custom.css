@@ -1,0 +1,31 @@
+@layer components {
+
+    .list-globle ul {
+        @apply mdscreen:flex mdscreen:flex-wrap mdscreen:items-center md:mb-16 last:mb-0;
+    }
+
+    .list-globle ul li {
+        @apply relative font-Outfit font-400 text-16 leading-20 m-0 p-0;
+    }
+
+    .list-globle ul li a {
+        @apply text-Blue-100 font-700 duration-300 delay-150 ease-linear hover:text-DarkBlue hover:underline;
+    }
+
+    .list-globle.blue-dot ul li {
+        @apply pl-20 md:mb-16 last:mb-0;
+    }
+
+    .list-globle.blue-dot ul li::before {
+        content: "";
+        @apply absolute top-5 left-0 w-[10px] h-[10px] bg-DarkBlue rounded-100;
+    }
+
+
+}
+
+
+
+/* private-policy start*/
+
+/* private-policy End*/
