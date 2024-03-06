@@ -153,6 +153,10 @@
     @apply flex smscreen:flex-col flex-wrap items-center justify-center relative w-full;
   }
 
+  .btn-full {
+    @apply w-full;
+  }
+
   .btn-link-ico {
     @apply flex flex-row gap-[8px] items-center justify-center m-0 p-0 text-Gray-200 text-16 leading-20 font-300 duration-300 delay-150 ease-linear hover:text-DarkBlue;
   }
@@ -865,6 +869,9 @@
   }
   .brochure-wrapper .card:hover .box .btn-link {
     @apply text-White hover:text-Green;
+  }
+  .brochure-wrapper .swiper-slide {
+    @apply pr-[1px];
   }
   /* brochure-wrapper End */
 }

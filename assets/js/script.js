@@ -312,6 +312,28 @@ $(document).ready(function ($) {
         });
     }
 
+    if ($('.booms-wrapper').length) {
+        var swiper = new Swiper(".booms-slider-thumb", {
+            spaceBetween: 30,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".booms-slider", {
+            spaceBetween: 1,
+            spaceBetween: 30,
+            slidesPerView: 1,
+            speed: 2000,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    }
+
     if ($('.brochure-wrapper').length) {
         var galleryslide = new Swiper(".brochure-slider", {
             loop: false,

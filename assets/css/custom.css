@@ -25,6 +25,27 @@
         @apply absolute top-5 left-0 w-[10px] h-[10px] bg-DarkBlue rounded-100;
     }
 
+    .btn-blue {
+        @apply bg-Blue-300 text-White leading-[150%] font-500 px-[46px] py-10 relative capitalize duration-300 delay-150 ease-linear z-1 smscreen:min-w-[200px];
+    }
+
+    .btn-blue:hover {
+        @apply translate-y-[-1px] bg-Green;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-blue:after {
+        content: "";
+        @apply inline-block h-full w-full rounded-[3px] absolute top-0 left-0 -z-1 duration-300 delay-150 ease-linear;
+    }
+
+    .btn-blue:hover::after {
+        @apply bg-Green;
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+        filter: blur(10px);
+    }
+
 }
 
 @layer utilities {
@@ -49,12 +70,15 @@
     .partners-slider .contect-details ul {
         @apply flex flex-col gap-4 items-center justify-center;
     }
+
     .partners-slider .card {
         @apply block w-full shadow-card;
     }
+
     .partners-slider .card .portrait {
         @apply relative overflow-hidden w-full block pt-[100%]
     }
+
     .partners-slider .card .portrait img {
         @apply absolute top-0 left-0 w-full h-full object-contain;
     }
@@ -66,21 +90,60 @@
     .product-slider .swiper-slide {
         @apply h-auto;
     }
+
     .product-slider .swiper-wrapper {
         @apply items-stretch h-auto;
     }
+
     .product-slider .swiper-slide .card {
         @apply h-full;
     }
+
     /*product support End */
 
     /* advantages Start */
     .product-slider .swiper-scrollbar {
         @apply xxl:hidden relative inset-0 w-full h-[10px] bg-Blue-100/30 max-w-[40%] mx-auto mt-40
     }
+
     .product-slider .swiper-scrollbar-drag {
         @apply bg-Blue-100/100
     }
+
     /* advantages End */
+
+    /* booms Start */
+    .booms-wrapper .tabs ul li {
+        @apply flex-1;
+    }
+    
+    .booms-wrapper .tabs ul li a {
+        @apply px-8;
+    }
+    
+    .booms-wrapper .zizag-section ul li {
+        @apply text-Blue-100 font-Redwing font-500 text-24 mdscreen:text-20 leading-32 uppercase relative;
+    }
+    .booms-wrapper .booms-slider .portrait {
+        @apply relative w-full overflow-hidden block pt-[87.86%];
+      }
+      .booms-wrapper .booms-slider .portrait img {
+        @apply absolute top-0 left-0;
+      }
+      .booms-wrapper .booms-slider-thumb .portrait {
+        @apply relative w-full overflow-hidden block pt-[88.06%];
+      }
+      .booms-wrapper .booms-slider-thumb .swiper-slide .portrait:after {
+        content: "";
+        @apply absolute top-0 left-0 w-full h-full bg-Black/30 duration-300 delay-150 ease-linear;
+      }
+      .booms-wrapper .booms-slider-thumb .swiper-slide.swiper-slide-thumb-active .portrait:after {
+        @apply bg-Black/0;
+      }
+    .booms-wrapper  .divider {
+        @apply w-full h-[1px] min-h-0 min_width_768:w-[1px] min_width_768:h-[100%] min_width_768:min-h-[30px] max_width_1400:w-full max_width_1400:h-[1px] max_width_1400:min-h-0 1400:w-[1px] 1400:h-[100%] 1400:min-h-[30px] bg-DarkBlue block
+      }
+
+    /*booms End */
 
 }
