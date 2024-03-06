@@ -309,6 +309,31 @@
   .btn-full .btn {
     @apply w-full
   }
+  .list-column ul {
+    @apply flex flex-col gap-[10px];
+  }
+  .list-column ul li {
+    @apply relative font-Outfit font-400 text-16 leading-20 m-0 p-0 pl-20;
+  }
+  .list-column.green-dot ul li:before {
+    content: "";
+    @apply absolute top-5 left-0 w-[10px] h-[10px] bg-Green rounded-100;
+  }
+  .list-column.blue-dot ul li:before {
+    content: "";
+    @apply absolute top-5 left-0 w-[10px] h-[10px] bg-DarkBlue rounded-100;
+  }
+  .list-column.white-dot ul li:before {
+    content: "";
+    @apply absolute top-5 left-0 w-[10px] h-[10px] bg-White rounded-100;
+  }
+  .list-column.white ul li {
+    @apply text-White;
+  }
+  .list-column.gray ul li {
+    @apply text-Gray-200;
+  }
+
 
   .list-two-column ul {
     @apply mdscreen:flex mdscreen:flex-col mdscreen:gap-[10px] md:columns-2 xl:gap-x-[100px] md:gap-x-[55px]
@@ -324,6 +349,10 @@
     content: "";
     @apply absolute top-5 left-0 w-[10px] h-[10px] bg-DarkBlue rounded-100;
   }
+  .list-two-column.white-dot ul li:before {
+    content: "";
+    @apply absolute top-5 left-0 w-[10px] h-[10px] bg-White rounded-100;
+  }
   .list-two-column.white ul li {
     @apply text-White;
   }
@@ -331,6 +360,23 @@
     @apply text-Gray-200;
   }
   
+  .list-two-column ol {
+    counter-reset: item;
+    list-style-type: none;
+    @apply mdscreen:flex mdscreen:flex-col mdscreen:gap-[10px] md:columns-2 xl:gap-x-[100px] md:gap-x-[55px] m-0 p-0;
+  }
+  .list-two-column ol li {
+    counter-increment: item;
+    @apply relative font-Outfit font-400 text-16 leading-20 m-0 md:mb-10 p-0 pl-20 last:mb-0;
+  }
+  .list-two-column ol li:before {
+    content: counter(item) ".";
+    @apply absolute top-0 left-0 text-DarkBlue text-16 font-700 leading-20;
+  }
+  .list-two-column ol li strong {
+    @apply text-DarkBlue font-700;
+  }
+
 }
 
 @layer utilities {

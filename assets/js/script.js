@@ -23,18 +23,11 @@ $(document).ready(function ($) {
         $('.navbar').toggleClass('active');
         $('body').toggleClass('menu-open');
     });
+
     $(".navbar").menumaker({
         title: "Menu",
         format: "multitoggle"
     });
-    // if ($('.banner-wrapper').length) {
-    //     $(window).resize(function() {
-    //         $('.banner-wrapper').css("padding-top", $(".announcement").height());
-    //     }).resize();
-    //     $(window).resize(function() {
-    //         $('.banner-slide .swiper-slide').css("padding-top", $(".announcement + .container-fluid").height());
-    //     }).resize();
-    // }
 
     if ($('.banner-wrapper').length) {
         $(window).resize(function() {
@@ -226,6 +219,45 @@ $(document).ready(function ($) {
             advantagesslide.update();
         });
     }
+    if ($('.product-wrapper').length) {
+        var advantagesslide = new Swiper(".product-slider", {
+            grabCursor: true,
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: false,
+                draggable: true,
+            },
+            breakpoints: {
+                1200: {
+                    slidesPerView: 5,
+                    spaceBetween: 40,
+                    scrollbar: false,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                    centeredSlides: true,
+                },
+                640: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 40,
+                    centeredSlides: true,
+                },
+                320: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 40,
+                    centeredSlides: true,
+                },
+            },
+        });
+        window.addEventListener('resize', function () {
+            advantagesslide.update();
+        });
+    }
 
     if ($('.footer-gallery').length) {
         var galleryslide = new Swiper(".gallery-slider", {
@@ -317,23 +349,6 @@ $(document).ready(function ($) {
         });
     }
 
-    // accordion Start
-    if($('.faq-wrapper').length) {
-        // $('.accordion > .accordion-item > .accordion-item-body').slideUp();
-        $('.accordion > .accordion-item:first-child > .accordion-item-body').slideDown();
-        $('.accordion > .accordion-item').click(function() {
-            if ($(this).hasClass("active")) {
-                $(this).removeClass("active").find(".accordion-item-body").slideUp('fast');
-            } else {
-                $(".accordion > .accordion-item.active .accordion-item-body").slideUp('fast');
-                $(".accordion > .accordion-item.active").removeClass("active");
-                $(this).addClass("active").find(".accordion-item-body").slideDown('fast');
-            }
-            return false;
-        });
-    }
-    // accordion End
-
     // Load More
     if ($(".bloglist-wrapper").length) {
         $(document).ready(function () {
@@ -368,11 +383,6 @@ $(document).ready(function ($) {
     }
     
 });
-
-
-$(document).on('click', '[data-lightbox]', lity);
-
-
 
 // Responsive menu start
 (function ($) {
@@ -449,5 +459,3 @@ $(document).on('click', '[data-lightbox]', lity);
 
 })($);
 // Responsive menu end
-
-

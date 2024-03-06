@@ -61,4 +61,26 @@
 
     /*our patners End*/
 
+    /*product support start*/
+
+    .product-slider .swiper-slide {
+        @apply h-auto;
+    }
+    .product-slider .swiper-wrapper {
+        @apply items-stretch h-auto;
+    }
+    .product-slider .swiper-slide .card {
+        @apply h-full;
+    }
+    /*product support End */
+
+    /* advantages Start */
+    .product-slider .swiper-scrollbar {
+        @apply xxl:hidden relative inset-0 w-full h-[10px] bg-Blue-100/30 max-w-[40%] mx-auto mt-40
+    }
+    .product-slider .swiper-scrollbar-drag {
+        @apply bg-Blue-100/100
+    }
+    /* advantages End */
+
 }
